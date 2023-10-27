@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import TypeIt from "typeit-react";
+import { Howl, Howler } from "howler";
 import "../../../App.scss";
 
 const Container = styled.section`
@@ -30,9 +32,8 @@ const ContentText = styled.p`
   width: 100%;
   height: 10%;
   color: #ffffffce;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "ChosunCentennial";
-  letter-spacing: 2px;
   text-shadow:
     0 0 4px #000,
     0 0 11px #000,
@@ -57,17 +58,41 @@ const ContentText = styled.p`
   }
 `;
 
-const Intro = () => {
+const FirstDescription = () => {
+  useEffect(() => {
+    const sound = new Howl({
+      src: ["/public/music/FirstDescription.mp3"],
+      autoplay: true,
+      loop: true,
+      format: "mp3",
+    });
+
+    return () => {
+      sound.stop();
+    };
+  }, []);
+
   return (
     <Container>
       <Content>
         <Link to="/introsecond">
           <ContentText>
-            이 이야기는 지인의 실화를 바탕으로 구성 되었습니다.
+            <TypeIt
+              options={{ loop: false, speed: 50 }}
+              getBeforeInit={(instance) => {
+                instance
+                  .pause(750)
+                  .type(
+                    "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
+                  )
+                  .pause(750);
+                return instance;
+              }}
+            />
           </ContentText>
         </Link>
       </Content>
     </Container>
   );
 };
-export default Intro;
+export default FirstDescription;
