@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "../../../App.scss";
 
 const Container = styled.section`
@@ -8,7 +9,7 @@ const Container = styled.section`
   flex-direction: column;
   text-align: center;
   height: 100%;
-  /* background-color: #000; */
+  background-color: #000;
 `;
 
 const Content = styled.div`
@@ -23,42 +24,26 @@ const Content = styled.div`
   flex-direction: column;
   padding: 80px 40px;
   height: 100%;
-  background-color: #1d1212;
 `;
 
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #fff;
+  color: #ffffffce;
   font-size: 2.5rem;
   font-family: "ChosunGs";
-  position: relative;
-  animation: foganimation 5s infinite alternate;
-  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
-  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  animation: flicker 5s infinite alternate;
   cursor: pointer;
 
-  @keyframes foganimation {
+  @keyframes time {
     0% {
-      opacity: 0.1;
-    }
-    22% {
-      opacity: 0.5;
-    }
-    40% {
-      opacity: 0.28;
-    }
-    58% {
-      opacity: 0.4;
-    }
-    80% {
-      opacity: 0.16;
+      opacity: 0;
     }
     100% {
-      opacity: 0.1;
+      opacity: 1;
     }
   }
-  /* @keyframes flicker {
+  @keyframes flicker {
     0%,
     18%,
     22%,
@@ -70,27 +55,31 @@ const ContentText = styled.p`
         0 0 4px #000,
         0 0 11px #000,
         0 0 19px #000,
-        0 0 40px #000,
-        0 0 80px #ff0000,
-        0 0 90px #ff0000,
-        0 0 100px #ff0000,
-        0 0 150px #ff0000;
+        0 0 90px #b23d39,
+        0 0 80px #b23d39,
+        0 0 90px #b23d39,
+        0 0 100px #b23d39,
+        0 0 150px #b23d39,
+        0 0 190px #b23d39,
+        0 0 250px #b23d39;
     }
     20%,
     25%,
     55% {
       text-shadow: none;
     }
-  } */
+  }
 `;
 
 const Intro = () => {
   return (
     <Container>
       <Content>
-        <ContentText>
-          이 이야기는 지인의 실화를 바탕으로 구성 되었습니다.
-        </ContentText>
+        <Link to="/introsecond">
+          <ContentText>
+            이 이야기는 지인의 실화를 바탕으로 구성 되었습니다.
+          </ContentText>
+        </Link>
       </Content>
     </Container>
   );
