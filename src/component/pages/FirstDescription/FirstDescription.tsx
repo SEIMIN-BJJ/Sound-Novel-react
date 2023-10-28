@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import TypeIt from "typeit-react";
-import ReactPlayer from "react-player";
-import "../../../App.scss";
 
 const Container = styled.section`
   overflow: hidden;
@@ -58,47 +56,65 @@ const ContentText = styled.p`
   }
 `;
 
-const PlayerWrapper = styled.div`
-  position: relative;
-
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+const Btn = styled.button`
+  width: 10rem;
+  height: 5rem;
+  position: absolute;
+  color: #ffffffce;
+  background-color: #000;
+  font-family: "ChosunCentennial";
+  letter-spacing: 3px;
+  z-index: 10;
+  cursor: pointer;
 `;
 
-const FirstDescription = () => {
+const FirstDescription: React.FC = () => {
+  const [audioPlay, setAudioPlay] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (isMusicPlaying) {
+        audioRef.current.pause();
+        setIsMusicPlaying(false);
+      } else {
+        audioRef.current.play().catch(() => {});
+        setIsMusicPlaying(true);
+      }
+    }
+  };
+
   return (
     <Container>
+      {audioPlay || (
+        <Btn onClick={toggleMusic}>
+          {isMusicPlaying ? "배경음악 끄기" : "배경음악 켜기"}
+        </Btn>
+      )}
+      <audio
+        ref={audioRef}
+        src={process.env.PUBLIC_URL + "/music/FirstAudio.mp3"}
+        autoPlay
+        loop
+      />
       <Content>
-        <PlayerWrapper>
-          <ReactPlayer
-            className="react-player"
-            url="/public/FirstDescription.mp3"
-            width="0"
-            height="0"
-            muted={true}
-            playing={true}
-            loop={true}
-          />
-          <Link to="/firstdescription">
-            <ContentText>
-              <TypeIt
-                options={{ loop: false, speed: 100 }}
-                getBeforeInit={(instance) => {
-                  instance
-                    .pause(750)
-                    .type(
-                      "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
-                    )
-                    .pause(750);
-                  return instance;
-                }}
-              />
-            </ContentText>
-          </Link>
-        </PlayerWrapper>
+        <Link to="/firstdescription">
+          <ContentText>
+            <TypeIt
+              options={{ loop: false, speed: 100 }}
+              getBeforeInit={(instance) => {
+                instance
+                  .pause(750)
+                  .type(
+                    "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
+                  )
+                  .pause(750);
+                return instance;
+              }}
+            />
+          </ContentText>
+        </Link>
       </Content>
     </Container>
   );
