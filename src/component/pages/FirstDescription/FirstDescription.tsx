@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import TypeIt from "typeit-react";
 import ReactPlayer from "react-player";
+
 import "../../../App.scss";
 
 const Container = styled.section`
@@ -74,7 +75,6 @@ const FirstDescription = () => {
       <Content>
         <PlayerWrapper>
           <ReactPlayer
-            className="react-player"
             url="/public/FirstDescription.mp3"
             width="0"
             height="0"
