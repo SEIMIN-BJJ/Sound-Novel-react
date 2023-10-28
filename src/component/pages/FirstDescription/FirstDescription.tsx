@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import TypeIt from "typeit-react";
@@ -14,6 +14,7 @@ const Container = styled.section`
 
 const Content = styled.div`
   width: 100%;
+  height: 100%;
   margin-bottom: 10vw;
   position: relative;
   min-height: 100vh;
@@ -23,7 +24,6 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  height: 100%;
 `;
 
 const ContentText = styled.p`
@@ -60,8 +60,9 @@ const Btn = styled.button`
   width: 10rem;
   height: 5rem;
   position: absolute;
+  top: 0;
+  right: 0;
   color: #ffffffce;
-  background-color: #000;
   font-family: "ChosunCentennial";
   letter-spacing: 3px;
   z-index: 10;
@@ -69,47 +70,41 @@ const Btn = styled.button`
 `;
 
 const FirstDescription: React.FC = () => {
-  const [audioPlay, setAudioPlay] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const toggleMusic = () => {
+  useEffect(() => {
     if (audioRef.current) {
       if (isMusicPlaying) {
-        audioRef.current.pause();
-        setIsMusicPlaying(false);
-      } else {
         audioRef.current.play().catch(() => {});
-        setIsMusicPlaying(true);
+      } else {
+        audioRef.current.pause();
       }
     }
-  };
+  }, [isMusicPlaying]);
 
   return (
     <Container>
-      {audioPlay || (
-        <Btn onClick={toggleMusic}>
-          {isMusicPlaying ? "배경음악 끄기" : "배경음악 켜기"}
-        </Btn>
-      )}
+      <Btn onClick={() => setIsMusicPlaying(!isMusicPlaying)}>
+        {isMusicPlaying ? "배경음악 끄기" : "배경음악 켜기"}
+      </Btn>
       <audio
         ref={audioRef}
         src={process.env.PUBLIC_URL + "/music/FirstAudio.mp3"}
-        autoPlay
         loop
       />
       <Content>
         <Link to="/firstdescription">
           <ContentText>
             <TypeIt
-              options={{ loop: false, speed: 100 }}
+              options={{ loop: false, speed: 1 }}
               getBeforeInit={(instance) => {
                 instance
-                  .pause(750)
+                  .pause(500)
                   .type(
-                    "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
+                    "나는 무속인이다.<br /><br />그리고<br /><br />보이지 않아야 할 것들이 보인다.<br /><br />또한<br /><br />느껴진다."
                   )
-                  .pause(750);
+                  .pause(500);
                 return instance;
               }}
             />
