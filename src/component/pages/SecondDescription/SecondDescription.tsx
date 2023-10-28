@@ -69,7 +69,7 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-const FirstDescription = () => {
+const SecondDescription = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -90,11 +90,11 @@ const FirstDescription = () => {
       </Btn>
       <audio
         ref={audioRef}
-        src={process.env.PUBLIC_URL + "/music/FirstAudio.mp3"}
+        src={process.env.PUBLIC_URL + "/music/SecondAudio.mp3"}
         loop
       />
       <Content>
-        <Link to="/seconddescription">
+        <Link to="/">
           <ContentText>
             <TypeIt
               options={{ loop: false, speed: 70 }}
@@ -102,7 +102,7 @@ const FirstDescription = () => {
                 instance
                   .pause(500)
                   .type(
-                    "나는 보이지 않아야 할 것들이 보인다.<br /><br />또한 느껴진다.<br /><br />어릴적의 나는 모든 사람들이 나와 같은 줄 알았다."
+                    "실제로 보여지지 않아야 할 존재들로 인해<br /><br />나의 인생은 크게 달라지기 시작한다.<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에 갇혀버렸다는 생각이 들었다."
                   )
                   .pause(500);
                 return instance;
@@ -115,4 +115,4 @@ const FirstDescription = () => {
   );
 };
 
-export default FirstDescription;
+export default SecondDescription;
