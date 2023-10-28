@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import TypeIt from "typeit-react";
-import { Howl, Howler } from "howler";
+import ReactPlayer from "react-player";
 import "../../../App.scss";
 
 const Container = styled.section`
@@ -58,41 +58,50 @@ const ContentText = styled.p`
   }
 `;
 
+const PlayerWrapper = styled.div`
+  position: relative;
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+`;
+
 const FirstDescription = () => {
-  useEffect(() => {
-    const sound = new Howl({
-      src: ["/public/music/FirstDescription.mp3"],
-      autoplay: true,
-      loop: true,
-      format: "mp3",
-    });
-
-    return () => {
-      sound.stop();
-    };
-  }, []);
-
   return (
     <Container>
       <Content>
-        <Link to="/introsecond">
-          <ContentText>
-            <TypeIt
-              options={{ loop: false, speed: 50 }}
-              getBeforeInit={(instance) => {
-                instance
-                  .pause(750)
-                  .type(
-                    "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
-                  )
-                  .pause(750);
-                return instance;
-              }}
-            />
-          </ContentText>
-        </Link>
+        <PlayerWrapper>
+          <ReactPlayer
+            className="react-player"
+            url="/public/FirstDescription.mp3"
+            width="0"
+            height="0"
+            muted={true}
+            playing={true}
+            loop={true}
+          />
+          <Link to="/firstdescription">
+            <ContentText>
+              <TypeIt
+                options={{ loop: false, speed: 100 }}
+                getBeforeInit={(instance) => {
+                  instance
+                    .pause(750)
+                    .type(
+                      "나는 무속인이다.<br /><br />그리고 나는 보이지 않아야 할 것들이 보인다.<br /><br />그리고<br /><br />느껴진다."
+                    )
+                    .pause(750);
+                  return instance;
+                }}
+              />
+            </ContentText>
+          </Link>
+        </PlayerWrapper>
       </Content>
     </Container>
   );
 };
+
 export default FirstDescription;
