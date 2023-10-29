@@ -97,13 +97,11 @@ const FirstDescription = () => {
         <Link to="/seconddescription">
           <ContentText>
             <TypeIt
-              options={{ loop: false, speed: 70 }}
+              options={{ loop: false, speed: 5 }}
               getBeforeInit={(instance) => {
-                instance
-                  .pause(500)
-                  .type(
-                    "나는 보이지 않아야 할 것들이 보인다.<br /><br />또한 느껴진다.<br /><br />어릴적의 나는 모든 사람들이 나와 같은 줄 알았다."
-                  );
+                instance.type(
+                  "나는 보이지 않아야 할 것들이 보인다.<br /><br />또한 느껴진다.<br /><br />어릴적의 나는 모든 사람들이 나와 같은 줄 알았다."
+                );
                 return instance;
               }}
             />
