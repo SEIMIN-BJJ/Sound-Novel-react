@@ -24,6 +24,23 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
+  background: url(${process.env.PUBLIC_URL + "/images/books.jpg"}) no-repeat
+    right center;
+  background-size: cover;
+  animation: time 10s ease-in-out;
+  filter: brightness(0.1);
+
+  @keyframes time {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const ContentText = styled.p`
@@ -44,6 +61,16 @@ const ContentText = styled.p`
     0 0 190px #b23d39,
     0 0 250px #b23d39;
   animation: time 5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
 
   @keyframes time {
@@ -93,28 +120,27 @@ const ThirdDescription = () => {
         src={process.env.PUBLIC_URL + "/music/ThirdAudio.mp3"}
         loop
       />
-      <Content>
-        <Link to="/">
-          <ContentText>
-            <TypeIt
-              options={{ loop: false, speed: 100 }}
-              getBeforeInit={(instance) => {
-                instance
-                  .pause(700)
-                  .type("나의 이야기는 이것으로부터 시작된다.")
-                  .pause(700)
-                  .type(
-                    "<br /><br />그리고 지독하게 외롭고 쓸쓸하며 험난했던 나의 유년시절,"
-                  )
-                  .type(
-                    "<br /><br />나의 자서전이자 현재를 살아가는 기묘한 인생의 이야기이다."
-                  );
-                return instance;
-              }}
-            />
-          </ContentText>
-        </Link>
-      </Content>
+      <Link to="/chapterintro">
+        <ContentText>
+          <TypeIt
+            options={{ loop: false, speed: 100 }}
+            getBeforeInit={(instance) => {
+              instance
+                .pause(700)
+                .type("나의 이야기는 이것으로부터 시작된다.")
+                .pause(700)
+                .type(
+                  "<br /><br />그리고 지독하게 외롭고 쓸쓸하며 험난했던 나의 유년시절,"
+                )
+                .type(
+                  "<br /><br />나의 자서전이자 현재를 살아가는 기묘한 인생의 이야기이다."
+                );
+              return instance;
+            }}
+          />
+        </ContentText>
+      </Link>
+      <Content />
     </Container>
   );
 };
