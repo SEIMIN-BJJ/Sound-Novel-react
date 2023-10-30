@@ -28,7 +28,7 @@ const Content = styled.div`
     no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.3);
+  filter: brightness(0.25);
 
   @keyframes time {
     0% {
@@ -125,9 +125,21 @@ const SecondDescription = () => {
           <TypeIt
             options={{ loop: false, speed: 100 }}
             getBeforeInit={(instance) => {
-              instance.type(
-                "실제로 보여지지 않아야 할 존재들로 인해<br /><br />나의 인생은 크게 달라지기 시작한다.<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
-              );
+              instance
+                .pause(700)
+                .type("실제로 보여지지 않아야 할 존재들로 인해")
+                .pause(700)
+                .type("<br /><br />나의 인생은 크게 달라지기 시작한다.")
+                .pause(700)
+                .type(
+                  "<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
+                )
+                .pause(700)
+                .type(
+                  "<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
+                )
+                .pause(700)
+                .type("<br /><br />갇혀버렸다는 생각이 들었다.");
               return instance;
             }}
           />

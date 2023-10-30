@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import TypeIt from "typeit-react";
-import { parse } from "path";
 
 const Container = styled.section`
   overflow: hidden;
@@ -123,12 +122,24 @@ const FirstDescription = () => {
       <Link to="/seconddescription">
         <ContentText>
           <TypeIt
-            options={{ loop: false, speed: 100 }}
+            options={{ loop: false, speed: 70 }}
             getBeforeInit={(instance) => {
               instance
-                .pause(900)
+                .pause(700)
                 .type(
-                  "나는 보이지 않아야 할 것들이 보인다. 또한, 느껴진다.<br /><br />어릴 적의 나는 모든 사람들이 나와 같은 줄 알았다.<br /><br />그래서 당연한 듯이 '그것'들과 대화를 했다.<br /><br />그리고 나는 어느샌가 귀신을 보는 아이로 소문이 났었다."
+                  "나는 보이지 않아야 할 것들이 보인다.<br /><br />또한, 느껴진다."
+                )
+                .pause(700)
+                .type(
+                  "<br /><br />어릴 적의 나는 모든 사람들이 나와 같은 줄 알았다."
+                )
+                .pause(700)
+                .type(
+                  "<br /><br />그래서 당연한 듯이 '그것'들과 대화를 하였고,"
+                )
+                .pause(700)
+                .type(
+                  "<br /><br />어느샌가 나는 귀신을 보는 불길(不吉)한 아이로 소문이 났었다."
                 );
 
               return instance;
