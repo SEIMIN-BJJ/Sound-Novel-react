@@ -131,13 +131,9 @@ const SecondDescription = () => {
                 .pause(700)
                 .type("<br /><br />나의 인생은 크게 달라지기 시작한다.")
                 .pause(700)
-                .type(
-                  "<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
-                )
+                .type("<br /><br />그것도 아주 크게 달라지게 되고,")
                 .pause(700)
-                .type(
-                  "<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
-                )
+                .type("<br /><br />나는 이승과 저승, 중간의 세계에")
                 .pause(700)
                 .type("<br /><br />갇혀버렸다는 생각이 들었다.");
               return instance;

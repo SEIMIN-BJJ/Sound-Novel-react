@@ -99,9 +99,16 @@ const ThirdDescription = () => {
             <TypeIt
               options={{ loop: false, speed: 100 }}
               getBeforeInit={(instance) => {
-                instance.type(
-                  "이것은 나의 자서전이자 내가 살아온 기묘한 인생의 이야기이다."
-                );
+                instance
+                  .pause(700)
+                  .type("나의 이야기는 이것으로부터 시작된다.")
+                  .pause(700)
+                  .type(
+                    "<br /><br />그리고 지독하게 외롭고 쓸쓸하며 험난했던 나의 유년시절,"
+                  )
+                  .type(
+                    "<br /><br />나의 자서전이자 현재를 살아가는 기묘한 인생의 이야기이다."
+                  );
                 return instance;
               }}
             />
