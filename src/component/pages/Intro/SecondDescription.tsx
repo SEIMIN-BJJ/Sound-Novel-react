@@ -24,6 +24,23 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
+  background: url(${process.env.PUBLIC_URL + "/images/SecondBack.jpg"})
+    no-repeat right center;
+  background-size: cover;
+  animation: time 10s ease-in-out;
+  filter: brightness(0.3);
+
+  @keyframes time {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const ContentText = styled.p`
@@ -44,6 +61,16 @@ const ContentText = styled.p`
     0 0 190px #b23d39,
     0 0 250px #b23d39;
   animation: time 5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
 
   @keyframes time {
@@ -93,21 +120,20 @@ const SecondDescription = () => {
         src={process.env.PUBLIC_URL + "/music/SecondAudio.mp3"}
         loop
       />
-      <Content>
-        <Link to="/thirddescription">
-          <ContentText>
-            <TypeIt
-              options={{ loop: false, speed: 5 }}
-              getBeforeInit={(instance) => {
-                instance.type(
-                  "실제로 보여지지 않아야 할 존재들로 인해<br /><br />나의 인생은 크게 달라지기 시작한다.<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에 갇혀버렸다는 생각이 들었다."
-                );
-                return instance;
-              }}
-            />
-          </ContentText>
-        </Link>
-      </Content>
+      <Link to="/thirddescription">
+        <ContentText>
+          <TypeIt
+            options={{ loop: false, speed: 100 }}
+            getBeforeInit={(instance) => {
+              instance.type(
+                "실제로 보여지지 않아야 할 존재들로 인해<br /><br />나의 인생은 크게 달라지기 시작한다.<br /><br />그것도 아주 크게 달라지게 되고<br /><br />나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다."
+              );
+              return instance;
+            }}
+          />
+        </ContentText>
+      </Link>
+      <Content />
     </Container>
   );
 };

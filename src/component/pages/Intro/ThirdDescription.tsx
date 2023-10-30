@@ -97,7 +97,7 @@ const ThirdDescription = () => {
         <Link to="/">
           <ContentText>
             <TypeIt
-              options={{ loop: false, speed: 5 }}
+              options={{ loop: false, speed: 100 }}
               getBeforeInit={(instance) => {
                 instance.type(
                   "이것은 나의 자서전이자 내가 살아온 기묘한 인생의 이야기이다."
