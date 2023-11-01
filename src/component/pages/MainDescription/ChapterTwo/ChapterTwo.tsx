@@ -28,7 +28,7 @@ const Content = styled.div`
     right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.25);
+  filter: brightness(0.24);
 
   @keyframes time {
     0% {
