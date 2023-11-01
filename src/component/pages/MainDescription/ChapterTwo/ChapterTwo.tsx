@@ -47,16 +47,11 @@ const ContentText = styled.p`
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 4px #000,
-    0 0 11px #000,
-    0 0 19px #000,
-    0 0 90px #b23d39,
-    0 0 80px #b23d39,
-    0 0 90px #b23d39,
-    0 0 100px #b23d39,
-    0 0 150px #b23d39,
-    0 0 190px #b23d39,
-    0 0 250px #b23d39;
+    0 0 20px #000,
+    0 0 30px #b23d39,
+    0 0 60px #b23d39,
+    0 0 70px #b23d39,
+    0 0 90px #b23d39;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
