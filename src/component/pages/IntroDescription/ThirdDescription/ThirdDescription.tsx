@@ -82,7 +82,7 @@ const Btn = styled.button`
   position: absolute;
   top: 0;
   right: 0;
-  color: #ffffffce;
+  color: #ffffffcc;
   font-family: "ChosunCentennial";
   letter-spacing: 3px;
   z-index: 10;
