@@ -44,15 +44,14 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #b2b2b2;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 30px #b23d39,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
-  color:#e7e7e7;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
@@ -89,13 +88,8 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 const typeItContent = `
-나의 이야기는 이것으로부터 시작된다.
-<br />
-<br />
-그리고 지독하게 외롭고 쓸쓸하며 험난했던 나의 유년시절,
-<br />
-<br />
-나의 자서전이자 현재를 살아가는 기묘한 인생의 이야기이다.`;
+이야기는 이렇게 시작된다.<br /><br />
+그리고 지독하게 외롭고 쓸쓸하며 험난했던<br /><br />나의 유년시절, 나의 자서전이자 현재를 살아가는<br /><br />기묘한 인생의 이야기이다.`;
 const ThirdDescription = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -120,10 +114,10 @@ const ThirdDescription = () => {
         src={process.env.PUBLIC_URL + "/music/ThirdAudio.mp3"}
         loop
       />
-      <Link to="/chapterintro">
+      <Link to="/chapterintroFirst">
         <ContentText>
           <TypeIt
-            options={{ loop: false, speed: 40 }}
+            options={{ loop: false, speed: 60 }}
             getBeforeInit={(instance) => {
               instance.type(typeItContent);
               return instance;

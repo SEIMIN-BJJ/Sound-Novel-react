@@ -29,7 +29,7 @@ const Content = styled.div`
     no-repeat right center;
   background-size: contain;
   animation: time 10s ease-in-out;
-  filter: brightness(0.15);
+  filter: brightness(0.12);
 
   @keyframes time {
     0% {
@@ -44,15 +44,14 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #b2b2b2;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 30px #b23d39,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
-  color:#e7e7e7;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
@@ -105,14 +104,9 @@ const FirstDescription = () => {
 
   const typeItContent = `
       나는 보이지 않아야 할 것들이 보인다.<br /><br />
-      또한, 느껴진다.
-      <br /><br />
-      어릴 적의 나는 모든 사람들이 나와 같은 줄 알았다.
-      <br /><br />
-      그래서 당연한 듯이 '그것'들과 대화를 하였고,
-      <br /><br />
-      어느샌가 나는 귀신을 보는 불길(不吉)한 아이로 소문이 났었다.
-  `;
+      또한, 느껴진다.<br /><br />
+      어릴 적의 나는 모든 사람들이 나와 같은 줄 알았다.<br /><br />
+      그래서 당연한 듯이 '그것'들과 대화를 하였고,<br /><br />어느샌가 나는 귀신을 보는 불길(不吉)한 아이로 소문이 나있었다.`;
 
   return (
     <Container>
@@ -127,7 +121,7 @@ const FirstDescription = () => {
       <Link to="/seconddescription">
         <ContentText>
           <TypeIt
-            options={{ loop: false, speed: 40 }}
+            options={{ loop: false, speed: 60 }}
             getBeforeInit={(instance) => {
               instance.type(typeItContent);
               return instance;

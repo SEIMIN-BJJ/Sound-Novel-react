@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import "../../../../App.scss";
+import "../../../../../App.scss";
 
 const Container = styled.section`
   overflow: hidden;
@@ -24,12 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/ChapterTwoBack.jpg"}) no-repeat
-    right center;
+  background: url(${process.env.PUBLIC_URL + "/images/ChapterTwoBack.jpg"})
+    no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.25);
-
+  filter: brightness(0.13);
   @keyframes time {
     0% {
       opacity: 0;
@@ -47,8 +46,7 @@ const ContentText = styled.p`
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 20px #000,
-    0 0 30px #b23d39,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
@@ -56,7 +54,7 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 81%;
+  left: 73%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -76,7 +74,6 @@ const ContentText = styled.p`
   }
 `;
 
-
 const Btn = styled.button`
   width: 10rem;
   height: 5rem;
@@ -93,7 +90,7 @@ const Btn = styled.button`
 const ChapterTwoText = [
   {
     title:
-      "나를 아는 어른들은 어릴 적부터 내 또래 아이들과는\n너무 다르게 자랐다는 이야기를 많이 듣고 살았다.\n\n그 다르다는 의미가 좋은 의미였으면 좋았겠지만\n그런것이 아닌 것을 내 스스로가 너무 잘 알고 있었다.\n\n그저 아무것도 모르고 뛰어 놀아야 하는 어린나이 임에도.",
+      "어른들은 어린 나에게 다른 아이들과는 다르다는 얘기를 자주 하곤 했다.`지금에와 생각해 보면 다르다는 의미가 필시 좋은 뜻은 아니였을 것이다.`하물며 내 스스로가 너무 잘 알고 있었다.`그저 아무것도 모르고 뛰어 놀아야 하는 어린나이 임에도`나는 스스로 생각했다.`그렇게 생각했다.",
   },
 ];
 const ChapterTwo = () => {
@@ -121,10 +118,10 @@ const ChapterTwo = () => {
           src={process.env.PUBLIC_URL + "/music/ChatperTwo.mp3"}
           loop
         />
-        <Link to="/chapterthree">
+        <Link to="/ChapterIntroSecond">
           {ChapterTwoText.map((text, index) => (
             <ContentText key={index}>
-              {text.title.split("\n").map((line, lineIndex) => (
+              {text.title.split("`").map((line, lineIndex) => (
                 <span key={lineIndex}>
                   {lineIndex > 0 && <br />}
                   {line}

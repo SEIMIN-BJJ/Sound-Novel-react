@@ -4,10 +4,11 @@ import IntroSecond from "../component/pages/IntroDescription/IntroSecond/IntroSe
 import FirstDescription from "../component/pages/IntroDescription/FirstDescription/FirstDescription";
 import SecondDescription from "../component/pages/IntroDescription/SecondDescription/SecondDescription";
 import ThirdDescription from "component/pages/IntroDescription/ThirdDescription/ThirdDescription";
-import ChapterIntro from "component/pages/MainDescription/ChapterIntro/ChapterIntro";
-import ChapterOne from "component/pages/MainDescription/ChapterOne/ChapterOne";
-import ChapterTwo from "component/pages/MainDescription/ChapterTwo/ChapterTwo";
-import ChapterThree from "component/pages/MainDescription/ChapterThree/ChapterThree";
+import ChapterIntroFirst from "component/pages/MainDescription/TitleOne/ChapterIntroFirst/ChapterIntroFirst";
+import ChapterOne from "component/pages/MainDescription/TitleOne/ChapterOne/ChapterOne";
+import ChapterTwo from "component/pages/MainDescription/TitleOne/ChapterTwo/ChapterTwo";
+import ChapterIntroSecond from 'component/pages/MainDescription/TitleTwo/ChapterIntroSecond/ChapterIntroSecond';
+import ChapterThree from "component/pages/MainDescription/TitleTwo/ChapterThree/ChapterThree";
 
 const StoryRoutes = () => {
   const location = useLocation();
@@ -19,10 +20,11 @@ const StoryRoutes = () => {
       <Route path="/firstdescription" element={<FirstDescription />}></Route>
       <Route path="/seconddescription" element={<SecondDescription />}></Route>
       <Route path="/thirddescription" element={<ThirdDescription />}></Route>
-      <Route path="/chapterintro" element={<ChapterIntro />}></Route>
+      <Route path="/chapterintroFirst" element={<ChapterIntroFirst />}></Route>
       <Route path="/chapterone" element={<ChapterOne />}></Route>
       <Route path="/chaptertwo" element={<ChapterTwo />}></Route>
-      <Route path="/chapterthree" element={<ChapterThree />}></Route>
+      <Route path="/chapterIntroSecond" element={<ChapterIntroSecond />}></Route>
+      <Route path="/chapterThree" element={<ChapterThree />}></Route>
     </Routes>
   );
 };
