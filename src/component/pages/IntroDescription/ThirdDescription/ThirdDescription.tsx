@@ -52,6 +52,7 @@ const ContentText = styled.p`
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
+  color:#e7e7e7;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
