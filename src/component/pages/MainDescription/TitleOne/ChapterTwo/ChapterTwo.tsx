@@ -87,7 +87,7 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-const ChapterTwoText = [
+const ChapterText = [
   {
     title:
       "어른들은 어린 나에게 다른 아이들과는 다르다는 얘기를 자주 하곤 했다.`지금에와 생각해 보면 다르다는 의미가 필시 좋은 뜻은 아니였을 것이다.`하물며 내 스스로가 너무 잘 알고 있었다.`그저 아무것도 모르고 뛰어 놀아야 하는 어린나이 임에도`나는 스스로 생각했다.`그렇게 생각했다.",
@@ -119,7 +119,7 @@ const ChapterTwo = () => {
           loop
         />
         <Link to="/ChapterIntroSecond">
-          {ChapterTwoText.map((text, index) => (
+          {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
                 <span key={lineIndex}>

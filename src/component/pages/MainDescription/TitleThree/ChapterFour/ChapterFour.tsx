@@ -86,7 +86,7 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-const ChapterTwoText = [
+const ChapterText = [
   {
     title:
     "그것을 본 이후 나의 인생은 이상한 방향으로 흘러 가기 시작했다는 생각이 들었다.`나한테만 참 야박하다 생각이 들 정도로 인생이 꼬일대로 꼬이기 시작했다.`내가 뭘 잘 못했나? 라는 생각이 점점 정말 내 문제인건가? 라는 생각으로 바뀌어 가기 시작했다.`장례식 이후 무려 20여년을 귀신 장난에 놀아났고 목숨이 위태로울 뻔 한적도 많았지만 `그 중에 정말 섬뜩 했을 때가 있었다.`나는 일도 사람도 그 어떤 무엇도 전부 부정 당하던 시기였다. 아니, 당하는 시기였다.`나는 무엇을 잘못한걸까. 인생이 참 덧없다 생각했을때. 그 순간 무엇인가가 내 등을 '탁탁' 쳤다.`“뭐지?”`그러나 나는 이런일을 겪는 것이 한두번이 아니였기에`“아..또 시작이구나..”라고 생각했지만 그 날은 어떠한 것도 받아들일 수가 없었다.`“나 좀 그냥 제발 좀 둬라!”`나는 소리를 쳤고 그것이 잘못되었다."
@@ -118,7 +118,7 @@ const ChapterFour = () => {
           loop
         />
         <Link to="/">
-          {ChapterTwoText.map((text, index) => (
+          {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
                 <span key={lineIndex}>
