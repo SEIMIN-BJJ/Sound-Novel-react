@@ -44,15 +44,14 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #b2b2b2;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 30px #b23d39,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
-  color:#e7e7e7;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
@@ -90,19 +89,10 @@ const Btn = styled.button`
 `;
 
 const typeItContent = `
-실제로 보여지지 않아야 할 존재들로 인해
-<br />
-<br />
-나의 인생은 크게 달라지기 시작한다.
-<br />
-<br />
-그것도 아주 크게 달라지게 되고,
-<br />
-<br />
-나는 이승과 저승, 중간의 세계에
-<br />
-<br />
-갇혀버렸다는 생각이 들었다.`;
+실제로 보여지지 않아야 할 존재들로 인해<br /><br />
+나의 인생은 크게 달라지기 시작한다.<br /><br />
+그것도 아주 크게 달라지게 되고,<br /><br />
+나는 이승과 저승, 중간의 세계에<br /><br />갇혀버렸다는 생각이 들었다.`;
 
 const SecondDescription = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
@@ -131,7 +121,7 @@ const SecondDescription = () => {
       <Link to="/thirddescription">
         <ContentText>
           <TypeIt
-            options={{ loop: false, speed: 40 }}
+            options={{ loop: false, speed: 60 }}
             getBeforeInit={(instance) => {
               instance.type(typeItContent);
               return instance;

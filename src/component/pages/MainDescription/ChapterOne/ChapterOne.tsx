@@ -28,7 +28,7 @@ const Content = styled.div`
     right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.20);
+  filter: brightness(0.15);
 
   @keyframes time {
     0% {
@@ -43,12 +43,11 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #b2b2b2;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 20px #000,
-    0 0 30px #b23d39,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
