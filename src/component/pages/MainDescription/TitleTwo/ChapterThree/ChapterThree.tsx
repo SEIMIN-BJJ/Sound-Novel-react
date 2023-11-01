@@ -28,6 +28,7 @@ const Content = styled.div`
     no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
+  filter: brightness(0.6);
   @keyframes time {
     0% {
       opacity: 0;
@@ -117,7 +118,7 @@ const ChapterThree = () => {
           src={process.env.PUBLIC_URL + "/music/ChtaterTrhee.mp3"}
           loop
         />
-        <Link to="/chapterIntroThird">
+        <Link to="/chapterFour">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (

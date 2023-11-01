@@ -24,10 +24,12 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/room.jpg"})
+  background: url(${process.env.PUBLIC_URL + "/images/rain.jpg"})
     no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
+  filter: brightness(0.25);
+
   @keyframes time {
     0% {
       opacity: 0;
@@ -89,10 +91,10 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-    "그것을 본 이후 나의 인생은 이상한 방향으로 흘러 가기 시작했다는 생각이 들었다.`나한테만 참 야박하다 생각이 들 정도로 인생이 꼬일대로 꼬이기 시작했다.`내가 뭘 잘 못했나? 라는 생각이 점점 정말 내 문제인건가? 라는 생각으로 바뀌어 가기 시작했다.`장례식 이후 무려 20여년을 귀신 장난에 놀아났고 목숨이 위태로울 뻔 한적도 많았지만 `그 중에 정말 섬뜩 했을 때가 있었다.`나는 일도 사람도 그 어떤 무엇도 전부 부정 당하던 시기였다. 아니, 당하는 시기였다.`나는 무엇을 잘못한걸까. 인생이 참 덧없다 생각했을때. 그 순간 무엇인가가 내 등을 '탁탁' 쳤다.`“뭐지?”`그러나 나는 이런일을 겪는 것이 한두번이 아니였기에`“아..또 시작이구나..”라고 생각했지만 그 날은 어떠한 것도 받아들일 수가 없었다.`“나 좀 그냥 제발 좀 둬라!”`나는 소리를 쳤고 그것이 잘못되었다."
+    "공포영화에서만 볼 법한 것이 정말 선명하게 내 눈에 비춰졌다.`아무것도 없는 비오는 단칸방의 불을 껐을때 사람의 형체의 실루엣이 `내 눈앞에 선명하게 있었고, 다시 불을 켜니 아무것도 없었다.`나는 이상한 느낌이 들었다. 이런 경우는 처음이였기에 어리둥절했다.`다시 불을 끄니 그 실루엣은 바닥에서 양반다리를 하고 앉아 있었고 `순간 두려워지는 나를 알 수 있었다.`이내 용기를 가지고 마주앉아 누구냐고 물었지만 대답이 없었다.`할 말이 없다면 내 집에서 나가달라고 했지만 아무런 미동도 없이 그 자리에 가만히 앉아 있었고`평범한 사람들이라면 겪어보지 못한 미지의 공포감에 밖으로 뛰쳐나갔어도 이상하지 않았을 상황에` 나는 그저 멍하니 있을 수 밖에 없었다.`그러나 이내 그 실루엣은 점점 나에게 다가와 한마디를 건넸고`그 한마디는 당시 나에게 닥쳐있던 현실을 날려버릴 정도로 무서운 말이였다."
   },
 ];
-const ChapterFour = () => {
+const ChapterFive = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -114,7 +116,7 @@ const ChapterFour = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChapterFour.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChapterFive.mp3"}
           loop
         />
         <Link to="/">
@@ -135,4 +137,4 @@ const ChapterFour = () => {
   );
 };
 
-export default ChapterFour;
+export default ChapterFive;
