@@ -24,7 +24,7 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/eye.webp"}) no-repeat
+  background: url(${process.env.PUBLIC_URL + "/images/darkroom.avif"}) no-repeat
     right center;
   background-size: cover;
   animation: time 5s ease-in-out;
