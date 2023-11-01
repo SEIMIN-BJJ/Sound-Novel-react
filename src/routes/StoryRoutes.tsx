@@ -1,13 +1,15 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import Intro from "../component/pages/Intro/Intro";
-import IntroSecond from "../component/pages/Intro/IntroSecond";
-import FirstDescription from "../component/pages/Intro/FirstDescription";
-import SecondDescription from "../component/pages/Intro/SecondDescription";
-import ThirdDescription from "component/pages/Intro/ThirdDescription";
-import ChapterIntro from "component/pages/Main/ChapterIntro";
-import ChapterOne from "component/pages/Main/ChapterOne";
+import Intro from "../component/pages/IntroDescription/Intro/Intro";
+import IntroSecond from "../component/pages/IntroDescription/IntroSecond/IntroSecond";
+import FirstDescription from "../component/pages/IntroDescription/FirstDescription/FirstDescription";
+import SecondDescription from "../component/pages/IntroDescription/SecondDescription/SecondDescription";
+import ThirdDescription from "component/pages/IntroDescription/ThirdDescription/ThirdDescription";
+import ChapterIntro from "component/pages/MainDescription/ChapterIntro/ChapterIntro";
+import ChapterOne from "component/pages/MainDescription/ChapterOne/ChapterOne";
+import ChapterTwo from "component/pages/MainDescription/ChapterTwo/ChapterTwo";
+import ChapterThree from "component/pages/MainDescription/ChapterThree/ChapterThree";
 
-function StoryRoutes() {
+const StoryRoutes = () => {
   const location = useLocation();
 
   return (
@@ -19,8 +21,10 @@ function StoryRoutes() {
       <Route path="/thirddescription" element={<ThirdDescription />}></Route>
       <Route path="/chapterintro" element={<ChapterIntro />}></Route>
       <Route path="/chapterone" element={<ChapterOne />}></Route>
+      <Route path="/chaptertwo" element={<ChapterTwo />}></Route>
+      <Route path="/chapterthree" element={<ChapterThree />}></Route>
     </Routes>
   );
-}
+};
 
 export default StoryRoutes;
