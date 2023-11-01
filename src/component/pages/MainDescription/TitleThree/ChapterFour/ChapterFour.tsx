@@ -92,7 +92,7 @@ const ChapterTwoText = [
       "유독 한가지 사진에 눈이 가는데 이때 당시의 기억은 어렴풋이 있다.`그 기억은 어떤 할아버지와 놀고 있던 기억이었다.'그것'은 사진속의 어르신 이였으리라.`나는 그 할아버지와 노는 것이 너무 재미있었다.`그 후 어떤 아주머니가 애기 엄마, 아빠 어딨냐고 소리를 치던 모습이였다.`그 아주머니의 얼굴을 지금도 선명히 기억한다.`무엇인가를 보고 겁에 질려 한 표정을, 그 후의 기억은 없다.`예상이지만 아주머니는 나의 무슨 행동에 놀라서 소리를 치지 않았을까.`아주머니가 소리를 지를만큼 무언가를 한 것은 아니였을까.`그리고 상복을 입었다면 집안의 어르신이였을텐데 누구셨을까.`그것이 처음으로 보지 말아야 할 것을 본 날이며 인생이 변화가 된 날이 아니였을까.",
   },
 ];
-const ChapterThree = () => {
+const ChapterFour = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -117,7 +117,7 @@ const ChapterThree = () => {
           src={process.env.PUBLIC_URL + "/music/ChtaterTrhee.mp3"}
           loop
         />
-        <Link to="/chapterIntroThird">
+        <Link to="/">
           {ChapterTwoText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
@@ -135,4 +135,4 @@ const ChapterThree = () => {
   );
 };
 
-export default ChapterThree;
+export default ChapterFour;
