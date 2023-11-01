@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import "../../../../App.scss";
+import "../../../../../App.scss";
 
 const Container = styled.section`
   overflow: hidden;
@@ -24,12 +24,10 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/hospital.jpg"}) no-repeat
-    right center;
+  background: url(${process.env.PUBLIC_URL + "/images/jang.jpg"})
+    no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.15);
-
   @keyframes time {
     0% {
       opacity: 0;
@@ -43,7 +41,7 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #b2b2b2;
+  color: #ffffffce;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   text-shadow:
@@ -88,13 +86,13 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-const ChapterOneText = [
+const ChapterTwoText = [
   {
     title:
-      "나는 그분들만 안다면 아시는 참으로 얄궂은 날에 어느 한 산부인과에서 태어났다.\n들은 바로는 어머니라는 사람도, 나도 참 고생하면서 태어났다고 한다.\n 어릴 적 고생하면 말년에 잘된다는 얘기를 그리 썩 좋아하지 않는다.\n그것만큼 터무니 없는 말이 어딨으랴.\n\n더군다나 어릴 적 기억을 떠올려 보려 해도 도무지 기억이 나질 않는다.\n사진 속의 나의 모습은 아주 해맑은 아이였고 순수한 모습을 하고 있었다.\n하지만 사진 속의 나의 모습은 전혀 기억이 나질 않는다.\n애초부터 없었던 듯이.",
+      "유독 한가지 사진에 눈이 가는데 이때 당시의 기억은 어렴풋이 있다.`그 기억은 어떤 할아버지와 놀고 있던 기억이었다.'그것'은 사진속의 어르신 이였으리라.`나는 그 할아버지와 노는 것이 너무 재미있었다.`그 후 어떤 아주머니가 애기 엄마, 아빠 어딨냐고 소리를 치던 모습이였다.`그 아주머니의 얼굴을 지금도 선명히 기억한다.`무엇인가를 보고 겁에 질려 한 표정을, 그 후의 기억은 없다.`예상이지만 아주머니는 나의 무슨 행동에 놀라서 소리를 치지 않았을까.`아주머니가 소리를 지를만큼 무언가를 한 것은 아니였을까.`그리고 상복을 입었다면 집안의 어르신이였을텐데 누구셨을까.`그것이 처음으로 보지 말아야 할 것을 본 날이며 인생이 변화가 된 날이 아니였을까.",
   },
 ];
-const ChapterOne = () => {
+const ChapterThree = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -116,13 +114,13 @@ const ChapterOne = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChapterOne.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChtaterTrhee.mp3"}
           loop
         />
-        <Link to="/chaptertwo">
-          {ChapterOneText.map((text, index) => (
+        <Link to="/">
+          {ChapterTwoText.map((text, index) => (
             <ContentText key={index}>
-              {text.title.split("\n").map((line, lineIndex) => (
+              {text.title.split("`").map((line, lineIndex) => (
                 <span key={lineIndex}>
                   {lineIndex > 0 && <br />}
                   {line}
@@ -137,4 +135,4 @@ const ChapterOne = () => {
   );
 };
 
-export default ChapterOne;
+export default ChapterThree;

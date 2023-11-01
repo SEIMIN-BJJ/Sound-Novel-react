@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import "../../../../App.scss";
 
 const Container = styled.section`
   overflow: hidden;

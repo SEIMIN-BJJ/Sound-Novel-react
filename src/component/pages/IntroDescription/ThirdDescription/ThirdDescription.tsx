@@ -88,8 +88,8 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 const typeItContent = `
-나의 이야기는 이것으로부터 시작된다.<br /><br />
-그리고 지독하게 외롭고 쓸쓸하며 험난했던<br /><br />나의 유년시절, 나의 자서전이자 현재를 살아가는 기묘한 인생의 이야기이다.`;
+이야기는 이렇게 시작된다.<br /><br />
+그리고 지독하게 외롭고 쓸쓸하며 험난했던<br /><br />나의 유년시절, 나의 자서전이자 현재를 살아가는<br /><br />기묘한 인생의 이야기이다.`;
 const ThirdDescription = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -114,7 +114,7 @@ const ThirdDescription = () => {
         src={process.env.PUBLIC_URL + "/music/ThirdAudio.mp3"}
         loop
       />
-      <Link to="/chapterintro">
+      <Link to="/chapterintroFirst">
         <ContentText>
           <TypeIt
             options={{ loop: false, speed: 60 }}

@@ -29,7 +29,7 @@ const Content = styled.div`
     no-repeat right center;
   background-size: contain;
   animation: time 10s ease-in-out;
-  filter: brightness(0.15);
+  filter: brightness(0.12);
 
   @keyframes time {
     0% {
@@ -106,7 +106,7 @@ const FirstDescription = () => {
       나는 보이지 않아야 할 것들이 보인다.<br /><br />
       또한, 느껴진다.<br /><br />
       어릴 적의 나는 모든 사람들이 나와 같은 줄 알았다.<br /><br />
-      그래서 당연한 듯이 '그것'들과 대화를 하였고,<br /><br />어느샌가 나는 귀신을 보는 불길(不吉)한 아이로 소문이 났었다.`;
+      그래서 당연한 듯이 '그것'들과 대화를 하였고,<br /><br />어느샌가 나는 귀신을 보는 불길(不吉)한 아이로 소문이 나있었다.`;
 
   return (
     <Container>
