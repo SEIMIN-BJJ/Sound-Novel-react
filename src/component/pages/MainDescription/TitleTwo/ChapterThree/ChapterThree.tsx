@@ -115,7 +115,7 @@ const ChapterThree = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChtaterTrhee.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChapterThree.mp3"}
           loop
         />
         <Link to="/chapterFour">
