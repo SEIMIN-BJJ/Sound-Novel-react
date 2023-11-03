@@ -24,11 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/shaman-nine.png"})
+  background: url(${process.env.PUBLIC_URL + "/images/god.jpeg"})
     no-repeat right center;
   background-size: cover;
-  animation: time 10s ease-in-out;
-  filter: brightness(0.2);
+  animation: time 8s ease-in-out;
+  filter: brightness(0.15);
 
   @keyframes time {
     0% {
@@ -55,7 +55,7 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 70%;
+  left: 75%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-   "나는 자연스레 그 길로 들어서게 되었다.`이렇게 가버리면 평범하게는 살지 못하는 걸까. `동시에 편해질 수 있지 않을까라는 기대, 그리고 두려움이 섞인 복잡한 감정이 밀려 들어왔다.`그렇게 떨고 있던 나에게 어디서 들려오고 있는지 모를 목소리가 들려왔다.``“아가. 너는 혼자가 아니다. 무서워 마라. 이끌어 주마. 걱정마라.” 라고.``목소리를 듣고 놀랐던 나는 '그것'들의 느낌보다 전혀 느끼지 못했던 포근하고 따뜻한 느낌을 받았다.`그리고 거짓말 같이 몸의 떨림은 멈추었고 다 잘될거야라는 생각이 들었다.`나는 이제 괜찮아 질 것 같은 기분이 들었다. 나는 이제 안전하다는 느낌이 들었다.`나는..이제 그러했다."
+   "나는 자연스레 그 길로 들어서게 되었다.`이렇게 가버리면 평범하게는 살지 못하는 걸까. `동시에 편해질 수 있지 않을까라는 기대, 그리고 두려움이 섞인 복잡한 감정이 밀려 들어왔다.`그렇게 떨고 있던 나에게 어디서 들려오고 있는지 모를 목소리가 들려왔다.``“아가. 너는 혼자가 아니다. 무서워 마라. 이끌어 주마. 걱정마라.” 라고.``목소리를 듣고 놀랐던 나는 '그것'들의 느낌보다 포근하고 따뜻한 느낌을 받았다.`그리고 거짓말 같이 몸의 떨림은 멈추었고 다 잘될거야라는 생각이 들었다.`나는 이제 괜찮아 질 것 같은 기분이 들었다. 나는 이제 안전하다는 느낌이 들었다.`나는..이제 그러했다."
   },
 ];
 const ChapterTen = () => {
