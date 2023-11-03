@@ -119,7 +119,7 @@ const ChapterTen = () => {
           src={process.env.PUBLIC_URL + "/music/ChapterTen.mp3"}
           loop
         />
-        <Link to="/chapterSix">
+        <Link to="/">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
