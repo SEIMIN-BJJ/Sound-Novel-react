@@ -52,7 +52,6 @@ const ContentText = styled.p`
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
-  animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -64,15 +63,6 @@ const ContentText = styled.p`
   justify-content: center;
   text-align: center;
   cursor: pointer;
-
-  @keyframes time {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 const Btn = styled.button`
