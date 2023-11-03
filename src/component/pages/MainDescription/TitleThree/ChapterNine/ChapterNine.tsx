@@ -24,11 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/ghost.jpeg"})
+  background: url(${process.env.PUBLIC_URL + "/images/shaman-nine.png"})
     no-repeat right center;
   background-size: cover;
   animation: time 10s ease-in-out;
-  filter: brightness(0.1);
+  filter: brightness(0.2);
 
   @keyframes time {
     0% {
@@ -91,10 +91,11 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-    "난 여지껏 보이면 안되는 존재들을 봐왔음에도 믿지 않았다.`내가 심신이 힘들어서 그런거다. 안보인다, 안보인다. 잘못 보는거다. `그런식으로 부정을 해왔다. 그러다가 어느 순간 정말 보이지 않게 되었다. `어느 곳을 가도 어디를 봐도 보이지 않게 되었다.`좋아해야 할 순간에 나는 왜?라는 생각과 함께 허무함이 동시에 밀려왔다.`진즉 이렇게 할 걸. 다행으로 생각하자. 이제 나도 평범하게 지내면 된다.`하지만 그건 착각이였고 이제는 하다하다 산 사람들의 마음을 알 수 있게 되었다.`산 사람, 죽은 사람의 생각들을 알 수 있게 된 것이다.`정말 기가 막힐 노릇이였다. 더 한것이 왔구나 싶었다.`내가 원해서 알게 되는 것이 아닌 강제로 머리에 박아넣는 느낌이였다.`정말 진심을 다해서 알고 싶지 않았다."
+    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나를 보더니 다가와 아무 말 없이 내 손을 꼭 붙잡았다. 걱정말라는 얘기를 했다.`그러나 나는 생전 처음 보는 사람이 붙잡은 손도 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`선생님이라는 분을 만났고 그 분을 처음 본 느낌은 생전 처음 겪어보는 느낌이 들었다.`대체 이게 뭔지 아리송 했다.`그 선생님은 나를 보자마자 이런 상태로 어떻게 버티고 살았냐며`어찌 버티고 살았냐며 불쌍하다 우셨다.` 나는 그 말을 듣자마자 눈물을 뚝뚝 흘렸다.`처음으로 들었다.`너는 미치지 않았다.`그 존재들은 너를 괴롭히려 한 것이 아닌 보호하고 있었던 것이다.`우리네들은 그것을 안다.`그러니 걱정하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
+
   },
 ];
-const ChapterEight = () => {
+const ChapterNine = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -116,10 +117,10 @@ const ChapterEight = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChapterEight.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChapterNine.mp3"}
           loop
         />
-        <Link to="/chapterNine">
+        <Link to="/chapterSix">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
@@ -137,4 +138,4 @@ const ChapterEight = () => {
   );
 };
 
-export default ChapterEight;
+export default ChapterNine;

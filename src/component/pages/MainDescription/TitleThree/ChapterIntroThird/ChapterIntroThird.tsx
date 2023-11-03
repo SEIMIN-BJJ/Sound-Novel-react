@@ -82,7 +82,7 @@ const ContentText = styled.p`
 const ChapterIntroThird = () => {
   return (
     <Container>
-      <Link to="/chapterThree">
+      <Link to="/chapterEight">
         <ContentText>3. 그 길로 들어서다.</ContentText>
       </Link>
       <Content />
