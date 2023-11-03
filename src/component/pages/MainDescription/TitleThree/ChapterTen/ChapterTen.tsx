@@ -47,7 +47,7 @@ const ContentText = styled.p`
   font-size: 1.2rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 30px #001,
+    0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
