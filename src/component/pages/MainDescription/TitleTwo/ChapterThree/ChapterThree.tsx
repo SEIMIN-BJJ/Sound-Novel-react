@@ -54,7 +54,7 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 70%;
+  left: 72%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;

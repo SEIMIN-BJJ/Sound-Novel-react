@@ -55,11 +55,11 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 73%;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   text-align: left;
   letter-spacing: 2px;
@@ -91,7 +91,7 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나를 보더니 다가와 아무 말 없이 내 손을 꼭 붙잡았다. 걱정말라는 얘기를 했다.`그러나 나는 생전 처음 보는 사람이 붙잡은 손도 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`선생님이라는 분을 만났고 그 분을 처음 본 느낌은 생전 처음 겪어보는 느낌이 들었다.`대체 이게 뭔지 아리송 했다.`그 선생님은 나를 보자마자 이런 상태로 어떻게 버티고 살았냐며`어찌 버티고 살았냐며 불쌍하다 우셨다.` 나는 그 말을 듣자마자 눈물을 뚝뚝 흘렸다.`처음으로 들었다.`너는 미치지 않았다.`그 존재들은 너를 괴롭히려 한 것이 아닌 보호하고 있었던 것이다.`우리네들은 그것을 안다.`그러니 걱정하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
+    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나에게 다가와 아무 말 없이 내 손을 꼭 붙잡았다. 걱정말라는 얘기를 했다.`나는 생전 처음 보는 사람이 붙잡은 손을 뿌리칠 수도, 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`그 분은 모든 것을 내려놓은 나의 모습을 보시고`이런 상태로 어떻게 버티고 살았냐며, 어찌 버티고 살았냐며 불쌍하다 우셨다.`처음으로 들었다. 너는 미치지 않았다고.. 우리네들은 그것을 안다.라고.`그러니 걱정 하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
 
   },
 ];
@@ -120,7 +120,7 @@ const ChapterNine = () => {
           src={process.env.PUBLIC_URL + "/music/ChapterNine.mp3"}
           loop
         />
-        <Link to="/chapterSix">
+        <Link to="/chapterIntroFourth">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
