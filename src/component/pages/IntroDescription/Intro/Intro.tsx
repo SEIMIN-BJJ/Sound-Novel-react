@@ -29,22 +29,25 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
-  font-size: 2.5rem;
+  color: #b2b2b2;
+  font-size: 2rem;
   font-family: "ChosunCentennial";
-  letter-spacing: 2px;
   text-shadow:
-    0 0 4px #000,
-    0 0 11px #000,
-    0 0 19px #000,
-    0 0 90px #b23d39,
-    0 0 80px #b23d39,
-    0 0 90px #b23d39,
-    0 0 100px #b23d39,
-    0 0 150px #b23d39,
-    0 0 190px #b23d39,
-    0 0 250px #b23d39;
+    0 0 30px #000,
+    0 0 60px #b23d39,
+    0 0 70px #b23d39,
+    0 0 90px #b23d39;
   animation: time 5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
 
   @keyframes time {
