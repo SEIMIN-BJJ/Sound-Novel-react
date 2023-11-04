@@ -40,11 +40,14 @@ const Content = styled.div`
   }
 
       @media (max-width: 768px) {
-    background-size: contain;
+    background-size: cover;
+    background-position: 15% 0;
   }
 
     @media (max-width: 480px) {
-    background-size: contain;
+    background-size: cover;
+    background-position: 15% 0;
+
   }
 `;
 

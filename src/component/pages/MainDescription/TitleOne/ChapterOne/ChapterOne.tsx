@@ -90,6 +90,7 @@ const ContentText = styled.p`
     align-items: flex-start;
     justify-content: center;
     padding: 3rem;
+    letter-spacing: 0.5vw;
 
   }
 
@@ -101,7 +102,7 @@ const ContentText = styled.p`
     align-items: flex-start;
     justify-content: center;
     padding: 2rem;
-
+    letter-spacing: 0.5vw;
   }
 `;
 

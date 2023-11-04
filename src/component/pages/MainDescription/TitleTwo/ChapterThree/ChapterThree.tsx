@@ -88,7 +88,7 @@ const ContentText = styled.p`
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
-
+    
   }
 
   @media (max-width: 480px) {

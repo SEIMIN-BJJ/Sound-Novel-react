@@ -89,6 +89,8 @@ const ContentText = styled.p`
     align-items: flex-start;
     justify-content: center;
     padding: 2rem;
+    letter-spacing: 0.5vw;
+
   }
 
   @media (max-width: 480px) {
@@ -99,7 +101,7 @@ const ContentText = styled.p`
     align-items: flex-start;
     justify-content: center;
     padding: 2rem;
-    
+    letter-spacing: 0.5vw;
   }
 `;
 
