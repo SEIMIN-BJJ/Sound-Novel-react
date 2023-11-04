@@ -24,11 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/god.jpeg"})
+  background: url(${process.env.PUBLIC_URL + "/images/moon.jpeg"})
     no-repeat right center;
   background-size: cover;
   animation: time 8s ease-in-out;
-  filter: brightness(0.25);
+  filter: brightness(0.3);
 
   @keyframes time {
     0% {
@@ -55,7 +55,7 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 74%;
+  left: 73%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -91,10 +91,10 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-   "나는 자연스레 그 길로 들어서게 되었다.`이렇게 가버리면 평범하게 살지는 못하는 걸까. `동시에 편해질 수 있지 않을까라는 기대, 그리고 두려움이 섞인 복잡한 감정이 밀려 들어왔다.`그렇게 떨고 있던 나에게 어디서 들려오고 있는지 모를 목소리가 들려왔다.``“아가. 너는 혼자가 아니다. 무서워 마라. 이끌어 주마. 걱정마라.” 라고.``목소리를 듣고 놀랐던 나는 '그것'들의 느낌보다 포근하고 따뜻한 느낌을 받았다.`그리고 거짓말 같이 몸의 떨림은 멈추었고 다 잘될거야라는 생각이 들었다.`나는 이제 괜찮아 질 것 같은 기분이 들었다. 나는 이제 안전하다는 느낌이 들었다.`나는..이제 그러했다."
+   "그 후로 나는 굿을 하고 기도를 하며 산으로, 바다로, 사람들을 도와주고 또한 여러곳을 거쳤다.`그리고 느낀 것은 인생사 누구하나 쉬운 사람이 없고, 사연없는 사람이 없으며`인간은 고고하며 어리석고 그만큼 가치가 있다는 것을 알게 된다.`나조차도 같은 인간인 것을 깨닳아야 하며, 같으면서도 다르다는 것을 인정 해야했다.`그럼에도 쉽지 않은 것을 알게 되기도 한다.`가끔은 나도 평범한 삶을 살았다면 어땠을까?라는 생각을 하지만`이제는 그저 웃고 넘기는 그런 사람이 되었다.`무당이라는 말은 사실 직책이라고 한다. 지금으로 치면 청와대를 넘나들던 사람이라고 한다.`참 아이러니 할 수 없다. 그럼에도 탓을 받고 사는 인생이라니.참으로 아이러니 할 수 없다.`아직 갈 길이 멀다. 언젠가는 알게 되지 않을까. 왜 이렇게 사람들을 도와주며 살아가야 하는 삶이였는지.`'왜 나였는지.'`하지만 그것은 먼 훗날의 이야기이기에 지금만을 살아가려 한다."
   },
 ];
-const ChapterTen = () => {
+const ChatperEleven = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -116,10 +116,10 @@ const ChapterTen = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChapterTen.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChapterEleven.mp3"}
           loop
         />
-        <Link to="/chatperEleven">
+        <Link to="/chapterIntroFifth">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
@@ -137,4 +137,4 @@ const ChapterTen = () => {
   );
 };
 
-export default ChapterTen;
+export default ChatperEleven;

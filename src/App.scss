@@ -68,6 +68,11 @@ section {
   font-family: "ChosunGs";
   src: url("./component/assets/fonts/ChosunGs.TTF") format("truetype");
 }
+
+@font-face {
+  font-family: "Gmarket-Bold";
+  src: url("./component/assets/fonts/GmarketSansTTFBold.ttf") format("truetype");
+}
 /* ==========================     반응형 작업      ===================== */
 
 @media screen and (max-width: 1799px) {
