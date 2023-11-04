@@ -87,9 +87,9 @@ const ContentText = styled.p`
     left: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 2rem;
+    padding: 3rem;
 
   }
 
@@ -98,7 +98,7 @@ const ContentText = styled.p`
     left: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 2rem;
 

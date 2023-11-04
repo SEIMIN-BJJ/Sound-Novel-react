@@ -81,7 +81,7 @@ const ContentText = styled.p`
   }
 
     @media (max-width: 768px) {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     align-items: flex-start;
@@ -92,7 +92,7 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     align-items: flex-start;

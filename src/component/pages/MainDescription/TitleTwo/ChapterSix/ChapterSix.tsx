@@ -72,21 +72,25 @@ const ContentText = styled.p`
   text-align: center;
   cursor: pointer;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
+    font-size: 10vw;
     left: 50%;
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
 
   }
 
   @media (max-width: 480px) {
+    font-size: 10vw;
     left: 50%;
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
   }
 `;
 
@@ -101,7 +105,7 @@ const Btn = styled.button`
   letter-spacing: 3px;
   z-index: 10;
   cursor: pointer;
-      @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 1rem;
   }
   @media (max-width: 480px) {

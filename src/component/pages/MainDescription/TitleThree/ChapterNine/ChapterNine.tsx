@@ -84,7 +84,7 @@ const ContentText = styled.p`
   }
 
       @media (max-width: 768px) {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     align-items: flex-start;
@@ -96,7 +96,7 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     align-items: flex-start;
@@ -118,6 +118,13 @@ const Btn = styled.button`
   letter-spacing: 3px;
   z-index: 10;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const ChapterText = [
