@@ -58,6 +58,14 @@ const ContentText = styled.p`
       opacity: 1;
     }
   }
+
+    @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const IntroSecond = () => {
