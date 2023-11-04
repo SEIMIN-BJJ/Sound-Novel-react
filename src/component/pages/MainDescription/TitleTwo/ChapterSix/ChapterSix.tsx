@@ -39,6 +39,14 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+
+      @media (max-width: 768px) {
+    background-size: contain;
+  }
+
+    @media (max-width: 480px) {
+    background-size: contain;
+  }
 `;
 
 const ContentText = styled.p`
@@ -63,6 +71,23 @@ const ContentText = styled.p`
   justify-content: center;
   text-align: center;
   cursor: pointer;
+
+    @media (max-width: 768px) {
+    left: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  @media (max-width: 480px) {
+    left: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Btn = styled.button`
@@ -76,6 +101,12 @@ const Btn = styled.button`
   letter-spacing: 3px;
   z-index: 10;
   cursor: pointer;
+      @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const ChapterSix = () => {

@@ -39,7 +39,7 @@ const Content = styled.div`
     }
   }
 
-        @media (max-width: 768px) {
+  @media (max-width: 768px) {
     background-size: contain;
   }
 
@@ -82,25 +82,27 @@ const ContentText = styled.p`
     }
   }
 
-        @media (max-width: 768px) {
-    font-size: 1.7rem;
+  @media (max-width: 768px) {
+    font-size: 2.5vw;
     left: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     padding: 2rem;
+    text-align:left;
+
   }
 
   @media (max-width: 480px) {
-    font-size: 1.7rem;
+    font-size: 2.5vw;
     left: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     padding: 2rem;
-
+    text-align:left;
   }
 `;
 

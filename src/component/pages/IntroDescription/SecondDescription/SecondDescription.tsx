@@ -83,11 +83,12 @@ const ContentText = styled.p`
   }
     @media (max-width: 768px) {
     font-size: 1.2rem;
+    padding: 2rem;
   }
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
-
+    padding: 2rem;
   }
 `;
 

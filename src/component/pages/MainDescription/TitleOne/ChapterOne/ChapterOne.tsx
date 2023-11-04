@@ -89,6 +89,8 @@ const ContentText = styled.p`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+
   }
 
   @media (max-width: 480px) {
@@ -98,6 +100,8 @@ const ContentText = styled.p`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+
   }
 `;
 

@@ -38,6 +38,14 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+
+      @media (max-width: 768px) {
+    background-size: contain;
+  }
+
+    @media (max-width: 480px) {
+    background-size: contain;
+  }
 `;
 
 const ContentText = styled.p`
@@ -73,6 +81,29 @@ const ContentText = styled.p`
       opacity: 1;
     }
   }
+
+      @media (max-width: 768px) {
+    font-size: 2.5vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align:left;
+
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.5vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align:left;
+  }
 `;
 
 const Btn = styled.button`
@@ -86,6 +117,13 @@ const Btn = styled.button`
   letter-spacing: 3px;
   z-index: 10;
   cursor: pointer;
+
+      @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const ChapterText = [

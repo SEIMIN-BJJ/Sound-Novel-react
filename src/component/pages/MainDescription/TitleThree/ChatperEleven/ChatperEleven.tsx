@@ -38,6 +38,16 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 768px) {
+    background-size: cover;
+    background-position: center center;
+  }
+
+    @media (max-width: 480px) {
+    background-size: cover;
+    background-position: center center;
+  }
 `;
 
 const ContentText = styled.p`
@@ -72,6 +82,29 @@ const ContentText = styled.p`
     100% {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align:left;
+
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.5vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align:left;
   }
 `;
 

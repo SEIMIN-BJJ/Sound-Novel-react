@@ -37,6 +37,16 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+
+      @media (max-width: 768px) {
+    background-size: cover;
+    background-position: center center;
+  }
+
+    @media (max-width: 480px) {
+    background-size: cover;
+    background-position: center center;
+  }
 `;
 
 const ContentText = styled.p`

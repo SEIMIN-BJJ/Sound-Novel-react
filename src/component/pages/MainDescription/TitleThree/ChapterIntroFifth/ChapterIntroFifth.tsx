@@ -37,6 +37,13 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+    @media (max-width: 768px) {
+    background-size: cover;
+  }
+
+    @media (max-width: 480px) {
+    background-size: cover;
+  }
 `;
 
 const ContentText = styled.p`
@@ -71,6 +78,29 @@ const ContentText = styled.p`
     100% {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 6vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    text-align:left;
+
+  }
+
+  @media (max-width: 480px) {
+    font-size: 6vw;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    text-align:left;
   }
 `;
 const typeItContent = `
