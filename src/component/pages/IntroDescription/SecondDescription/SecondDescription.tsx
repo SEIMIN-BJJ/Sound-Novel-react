@@ -39,11 +39,13 @@ const Content = styled.div`
       opacity: 1;
     }
   }
-  @media (max-width: 768px) {
-    background-size: contain; 
+
+    @media (max-width: 768px) {
+    background-position: center center;
   }
-  @media (max-width: 480px) {
-    background-size: contain; 
+
+    @media (max-width: 480px) {
+    background-position: center center;
   }
 `;
 
@@ -85,6 +87,7 @@ const ContentText = styled.p`
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
+
   }
 `;
 
@@ -99,13 +102,13 @@ const Btn = styled.button`
   letter-spacing: 3px;
   z-index: 10;
   cursor: pointer;
-  
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
+
+    @media (max-width: 768px) {
+    font-size: 1rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 

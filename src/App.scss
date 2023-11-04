@@ -99,15 +99,22 @@ section {
 
 /* 모바일 */
 @mixin mobile {
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
   @media screen and (max-width: 599px) {
     html {
       font-size: 12px !important;
+      background-size: cover;
+      background-position: center center;
     }
   }
 }
-
 @media screen and (max-width: 479px) {
   html {
     font-size: 10px !important;
+    background-size: cover;
+    background-position: center center;
   }
 }

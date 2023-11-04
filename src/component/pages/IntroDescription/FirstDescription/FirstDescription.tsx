@@ -39,11 +39,13 @@ const Content = styled.div`
       opacity: 1;
     }
   }
+
   @media (max-width: 768px) {
-    background-size: contain; 
+    background-size: cover;
   }
+
   @media (max-width: 480px) {
-    background-size: contain; 
+    background-size: cover;
   }
 `;
 
@@ -86,7 +88,9 @@ const ContentText = styled.p`
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
+
   }
+
 `;
 
 const Btn = styled.button`
@@ -102,11 +106,10 @@ const Btn = styled.button`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 
