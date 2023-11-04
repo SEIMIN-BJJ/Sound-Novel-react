@@ -43,7 +43,7 @@ const ContentText = styled.p`
   width: 100%;
   height: 10%;
   color: #ffffffce;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "ChosunCentennial";
   text-shadow:
     0 0 30px #000,
@@ -54,7 +54,7 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 72%;
+  left: 73%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;

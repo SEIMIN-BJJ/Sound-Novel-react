@@ -18,6 +18,8 @@ import ChapterEight from '../component/pages/MainDescription/TitleThree/ChapterE
 import ChapterNine from '../component/pages/MainDescription/TitleThree/ChapterNine/ChapterNine';
 import ChapterIntroFourth from "component/pages/MainDescription/TitleThree/ChapterIntroFourth/ChapterIntroFourth";
 import ChapterTen from '../component/pages/MainDescription/TitleThree/ChapterTen/ChapterTen';
+import ChatperEleven from "component/pages/MainDescription/TitleThree/ChatperEleven/ChatperEleven";
+import ChapterIntroFifth from "component/pages/MainDescription/TitleThree/ChapterIntroFifth/ChapterIntroFifth";
 
 const StoryRoutes = () => {
   const location = useLocation();
@@ -43,6 +45,8 @@ const StoryRoutes = () => {
       <Route path="/chapterNine" element={<ChapterNine />}></Route>
       <Route path="/chapterIntroFourth" element={<ChapterIntroFourth />}></Route>
       <Route path="/chapterTen" element={<ChapterTen />}></Route>
+      <Route path="/chatperEleven" element={<ChatperEleven />}></Route>
+      <Route path="/chapterIntroFifth" element={<ChapterIntroFifth />}></Route>
     </Routes>
   );
 };

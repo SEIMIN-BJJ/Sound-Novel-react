@@ -24,11 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/shaman-nine.png"})
+  background: url(${process.env.PUBLIC_URL + "/images/moon.jpeg"})
     no-repeat right center;
   background-size: cover;
-  animation: time 10s ease-in-out;
-  filter: brightness(0.2);
+  animation: time 8s ease-in-out;
+  filter: brightness(0.3);
 
   @keyframes time {
     0% {
@@ -47,7 +47,7 @@ const ContentText = styled.p`
   font-size: 1.2rem;
   font-family: "ChosunCentennial";
   text-shadow:
-    0 0 30px #000,
+    0 0 30px #001,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
     0 0 90px #b23d39;
@@ -55,12 +55,13 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 50%;
+  left: 73%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
   letter-spacing: 2px;
   cursor: pointer;
 
@@ -90,11 +91,10 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나에게 다가와 아무 말 없이 내 손을 꼭 붙잡았다. 걱정말라는 얘기를 했다.`나는 생전 처음 보는 사람이 붙잡은 손을 뿌리칠 수도, 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`그 분은 모든 것을 내려놓은 나의 모습을 보고 놀라시며`이런 상태로 어떻게 버티고 살았냐며, 어찌 버티고 살았냐며 불쌍하다 우셨다.`죽어도 열두번은 더 죽을텐데 어떻게 버티고 있었냐며, 가슴이 찢어진다며 우셨다.`처음으로 들었다. '너는 미치지 않았다고.' 우리네들은 그것을 안다.라고.`그러니 걱정 하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
-
+   "그 후로 나는 굿을 하고 기도를 하며 산으로, 바다로, 사람들을 도와주고 또한 여러곳을 거쳤다.`그리고 느낀 것은 인생사 누구하나 쉬운 사람이 없고, 사연없는 사람이 없으며`인간은 고고하며 어리석고 그만큼 가치가 있다는 것을 알게 된다.`나조차도 같은 인간인 것을 깨닳아야 하며, 같으면서도 다르다는 것을 인정 해야했다.`그럼에도 쉽지 않은 것을 알게 되기도 한다.`가끔은 나도 평범한 삶을 살았다면 어땠을까?라는 생각을 하지만`이제는 그저 웃고 넘기는 그런 사람이 되었다.`무당이라는 말은 사실 직책이라고 한다. 지금으로 치면 청와대를 넘나들던 사람이라고 한다.`참 아이러니 할 수 없다. 그럼에도 탓을 받고 사는 인생이라니.참으로 아이러니 할 수 없다.`아직 갈 길이 멀다. 언젠가는 알게 되지 않을까. 왜 이렇게 사람들을 도와주며 살아가야 하는 삶이였는지.`'왜 나였는지.'`하지만 그것은 먼 훗날의 이야기이기에 지금만을 살아가려 한다."
   },
 ];
-const ChapterNine = () => {
+const ChatperEleven = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -116,10 +116,10 @@ const ChapterNine = () => {
         </Btn>
         <audio
           ref={audioRef}
-          src={process.env.PUBLIC_URL + "/music/ChapterNine.mp3"}
+          src={process.env.PUBLIC_URL + "/music/ChapterEleven.mp3"}
           loop
         />
-        <Link to="/chapterIntroFourth">
+        <Link to="/chapterIntroFifth">
           {ChapterText.map((text, index) => (
             <ContentText key={index}>
               {text.title.split("`").map((line, lineIndex) => (
@@ -137,4 +137,4 @@ const ChapterNine = () => {
   );
 };
 
-export default ChapterNine;
+export default ChatperEleven;
