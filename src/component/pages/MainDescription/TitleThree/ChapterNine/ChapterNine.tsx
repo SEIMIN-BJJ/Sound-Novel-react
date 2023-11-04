@@ -61,7 +61,6 @@ const ContentText = styled.p`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
   letter-spacing: 2px;
   cursor: pointer;
 
