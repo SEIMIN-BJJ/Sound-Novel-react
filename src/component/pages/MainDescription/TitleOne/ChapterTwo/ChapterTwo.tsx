@@ -82,7 +82,7 @@ const ContentText = styled.p`
   }
 
       @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 0.9rem;
+    font-size: 3.5vw;
     left: 50%;
     display: flex;
     flex-direction: column;
