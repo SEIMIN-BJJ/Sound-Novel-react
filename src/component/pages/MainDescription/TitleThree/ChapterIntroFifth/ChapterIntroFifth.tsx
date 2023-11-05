@@ -24,11 +24,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/cloud.jpeg"}) no-repeat
+  background: url(${process.env.PUBLIC_URL + "/images/sunset.jpg"}) no-repeat
     right center;
   background-size: cover;
   animation: time 2s ease-in-out;
-  filter: brightness(0.7);
+  filter: brightness(1);
   @keyframes time {
     0% {
       opacity: 0;
