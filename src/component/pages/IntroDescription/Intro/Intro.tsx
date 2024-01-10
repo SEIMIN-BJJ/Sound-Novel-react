@@ -7,7 +7,6 @@ const Container = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   text-align: center;
   background-color: #000;
 
@@ -23,11 +22,9 @@ const Container = styled.section`
 const Content = styled.div`
   width: 100%;
   height: 100vh;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
   @media (max-width: 768px) {
   width: 100vw;
@@ -49,10 +46,8 @@ const ContentText = styled.p`
     0 0 90px #b23d39;
   animation: time 5s ease-in-out;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   cursor: pointer;
 
   @keyframes time {
@@ -71,6 +66,10 @@ const ContentText = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 `;
 
