@@ -10,6 +10,14 @@ const Container = styled.section`
   text-align: center;
   height: 100%;
   background-color: #000;
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 `;
 
 const Content = styled.div`
@@ -39,13 +47,12 @@ const Content = styled.div`
     }
   }
 
-    @media (max-width: 768px) {
-    background-size: contain;
+  @media screen and (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   }
 
-    @media (max-width: 480px) {
-    background-size: contain;
-  }
 `;
 
 const ContentText = styled.p`
@@ -91,6 +98,8 @@ const ContentText = styled.p`
     justify-content: center;
     padding: 3rem;
     letter-spacing: 0.5vw;
+    width: 100vw;
+    height: 100vh;
 
   }
 

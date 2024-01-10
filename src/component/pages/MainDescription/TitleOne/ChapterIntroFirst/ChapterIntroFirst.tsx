@@ -9,6 +9,14 @@ const Container = styled.section`
   text-align: center;
   height: 100%;
   background-color: #000;
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 `;
 
 const Content = styled.div`
@@ -23,6 +31,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
+
+  @media screen and (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  }
 `;
 
 const ContentText = styled.p`
@@ -62,6 +75,13 @@ const ContentText = styled.p`
     100% {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+  padding: 2rem;
   }
 `;
 
