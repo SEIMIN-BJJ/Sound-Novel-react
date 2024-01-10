@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Sound-Novel-react/static/css/main.e594f7f5.css",
-    "main.js": "/Sound-Novel-react/static/js/main.e6f9f05e.js",
+    "main.js": "/Sound-Novel-react/static/js/main.ca658b80.js",
     "static/js/787.ec7e2acd.chunk.js": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js",
     "static/media/ChosunCentennial_otf.otf": "/Sound-Novel-react/static/media/ChosunCentennial_otf.54881a3acbbea1be6bb4.otf",
     "static/media/ChosunGs.TTF": "/Sound-Novel-react/static/media/ChosunGs.4ba914acf004d00cc51f.TTF",
     "static/media/GmarketSansTTFBold.ttf": "/Sound-Novel-react/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
     "index.html": "/Sound-Novel-react/index.html",
     "main.e594f7f5.css.map": "/Sound-Novel-react/static/css/main.e594f7f5.css.map",
-    "main.e6f9f05e.js.map": "/Sound-Novel-react/static/js/main.e6f9f05e.js.map",
+    "main.ca658b80.js.map": "/Sound-Novel-react/static/js/main.ca658b80.js.map",
     "787.ec7e2acd.chunk.js.map": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e594f7f5.css",
-    "static/js/main.e6f9f05e.js"
+    "static/js/main.ca658b80.js"
   ]
 }
