@@ -8,22 +8,34 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
   height: 100%;
   background-color: #000;
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 `;
 
 const Content = styled.div`
   width: 100%;
-  margin-bottom: 10vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  height: 100%;
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  }
 `;
 
 const ContentText = styled.p`
@@ -60,11 +72,9 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
   }
 `;
 

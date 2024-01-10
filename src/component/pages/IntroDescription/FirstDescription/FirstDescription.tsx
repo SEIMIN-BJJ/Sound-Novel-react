@@ -11,14 +11,20 @@ const Container = styled.section`
   text-align: center;
   height: 100%;
   background-color: #000;
+
+  @media (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 `;
 
 const Content = styled.div`
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10vw;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -40,13 +46,12 @@ const Content = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    background-size: cover;
+  @media screen and (max-width: 768px) {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   }
 
-  @media (max-width: 480px) {
-    background-size: cover;
-  }
 `;
 
 const ContentText = styled.p`
@@ -83,13 +88,9 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
-    padding: 2rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
-    padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
   }
 
 `;
@@ -107,9 +108,6 @@ const Btn = styled.button`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-  @media (max-width: 480px) {
     font-size: 1rem;
   }
 `;
