@@ -33,6 +33,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
   width: 100vw;
   height: 100vh;
+
   }
 `;
 
@@ -68,6 +69,9 @@ const ContentText = styled.p`
   width: 100vw;
   height: 100vh;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 `;
 
