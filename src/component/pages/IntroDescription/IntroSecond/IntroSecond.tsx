@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import "../../../../App.scss";
 
 const Container = styled.section`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
 
   @media (max-width: 768px) {
@@ -21,23 +21,22 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
   @media (max-width: 768px) {
   width: 100vw;
   height: 100vh;
+
   }
 `;
 
 const ContentText = styled.p`
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   color: #b2b2b2;
   font-size: 2rem;
   font-family: "ChosunCentennial";
@@ -48,7 +47,6 @@ const ContentText = styled.p`
     0 0 90px #b23d39;
   animation: time 5s ease-in-out;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
