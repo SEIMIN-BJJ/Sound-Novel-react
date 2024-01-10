@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import "../../../../App.scss";
 
 const Container = styled.section`
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  height: 100%;
   background-color: #000;
 
   @media (max-width: 768px) {
@@ -25,12 +25,10 @@ const Content = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 80px 40px;
 
   @media (max-width: 768px) {
   width: 100vw;
@@ -40,7 +38,7 @@ const Content = styled.div`
 
 const ContentText = styled.p`
   width: 100%;
-  height: 10%;
+  height: auto;
   color: #b2b2b2;
   font-size: 2rem;
   font-family: "ChosunCentennial";
@@ -50,11 +48,6 @@ const ContentText = styled.p`
     0 0 70px #b23d39,
     0 0 90px #b23d39;
   animation: time 5s ease-in-out;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;

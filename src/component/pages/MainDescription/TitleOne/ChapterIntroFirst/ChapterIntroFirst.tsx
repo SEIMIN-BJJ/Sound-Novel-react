@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+
 const Container = styled.section`
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100%;
   background-color: #000;
 
   @media (max-width: 768px) {
@@ -21,18 +23,14 @@ const Container = styled.section`
 
 const Content = styled.div`
   width: 100%;
-  height: 100%;
-  margin-bottom: 10vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 80px 40px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
   width: 100vw;
   height: 100vh;
   }
@@ -40,7 +38,7 @@ const Content = styled.div`
 
 const ContentText = styled.p`
   width: 100%;
-  height: 10%;
+  height: auto;
   color: #ffffffce;
   font-size: 2rem;
   font-family: "ChosunCentennial";
@@ -81,7 +79,6 @@ const ContentText = styled.p`
   width: 100vw;
   height: 100vh;
   font-size: 2rem;
-  padding: 2rem;
   }
 `;
 
