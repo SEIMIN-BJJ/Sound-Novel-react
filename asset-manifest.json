@@ -1,18 +1,27 @@
 {
   "files": {
-    "main.css": "/Sound-Novel-react/static/css/main.e594f7f5.css",
-    "main.js": "/Sound-Novel-react/static/js/main.244cd453.js",
+    "main.css": "/Sound-Novel-react/static/css/main.775ea0cc.css",
+    "main.js": "/Sound-Novel-react/static/js/main.e92055dd.js",
     "static/js/787.ec7e2acd.chunk.js": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js",
     "static/media/ChosunCentennial_otf.otf": "/Sound-Novel-react/static/media/ChosunCentennial_otf.54881a3acbbea1be6bb4.otf",
     "static/media/ChosunGs.TTF": "/Sound-Novel-react/static/media/ChosunGs.4ba914acf004d00cc51f.TTF",
     "static/media/GmarketSansTTFBold.ttf": "/Sound-Novel-react/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
+    "static/media/Pretendard-Light.otf": "/Sound-Novel-react/static/media/Pretendard-Light.65372b5df865e8aa758a.otf",
+    "static/media/Pretendard-Medium.otf": "/Sound-Novel-react/static/media/Pretendard-Medium.902a118c9bf50b588451.otf",
+    "static/media/Pretendard-SemiBold.otf": "/Sound-Novel-react/static/media/Pretendard-SemiBold.4b3283bc0e29a9c97c11.otf",
+    "static/media/Pretendard-Bold.otf": "/Sound-Novel-react/static/media/Pretendard-Bold.4e72d46e664b88a6b5c8.otf",
+    "static/media/Pretendard-Regular.otf": "/Sound-Novel-react/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
+    "static/media/Pretendard-ExtraBold.otf": "/Sound-Novel-react/static/media/Pretendard-ExtraBold.fa944c3a241cdef4584a.otf",
+    "static/media/Pretendard-Black.otf": "/Sound-Novel-react/static/media/Pretendard-Black.ed4fa19a4df95cb6740b.otf",
+    "static/media/Pretendard-ExtraLight.otf": "/Sound-Novel-react/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
+    "static/media/Pretendard-Thin.otf": "/Sound-Novel-react/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
     "index.html": "/Sound-Novel-react/index.html",
-    "main.e594f7f5.css.map": "/Sound-Novel-react/static/css/main.e594f7f5.css.map",
-    "main.244cd453.js.map": "/Sound-Novel-react/static/js/main.244cd453.js.map",
+    "main.775ea0cc.css.map": "/Sound-Novel-react/static/css/main.775ea0cc.css.map",
+    "main.e92055dd.js.map": "/Sound-Novel-react/static/js/main.e92055dd.js.map",
     "787.ec7e2acd.chunk.js.map": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e594f7f5.css",
-    "static/js/main.244cd453.js"
+    "static/css/main.775ea0cc.css",
+    "static/js/main.e92055dd.js"
   ]
 }
