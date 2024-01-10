@@ -40,12 +40,9 @@ const Content = styled.div`
     }
   }
 
-      @media (max-width: 768px) {
-    background-size: contain;
-  }
-
-    @media (max-width: 480px) {
-    background-size: contain;
+    @media (max-width: 768px) {
+    background-size: cover;
+    background-position: center center;
   }
 `;
 
