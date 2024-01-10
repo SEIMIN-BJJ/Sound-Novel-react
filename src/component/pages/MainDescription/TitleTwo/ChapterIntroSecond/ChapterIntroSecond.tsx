@@ -15,17 +15,13 @@ const Container = styled.section`
 const Content = styled.div`
   width: 100%;
   height: 100%;
-  margin-bottom: 10vw;
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/eye.webp"}) no-repeat
-    right center;
+  background: url(${process.env.PUBLIC_URL + "/images/eye.webp"}) no-repeat right center;
   background-size: cover;
   animation: time 5s ease-in-out;
   filter: brightness(0.2);
@@ -38,12 +34,10 @@ const Content = styled.div`
     }
   }
   @media (max-width: 768px) {
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
   }
 
-    @media (max-width: 480px) {
-    background-size: contain;
-  }
 `;
 
 const ContentText = styled.p`
