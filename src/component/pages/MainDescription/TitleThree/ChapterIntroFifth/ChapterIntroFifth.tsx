@@ -7,6 +7,8 @@ import "../../../../../App.scss";
 const Container = styled.section`
   overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   height: 100%;
@@ -62,7 +64,7 @@ const ContentText = styled.p`
   0 0 60px #ccc,
   0 0 70px #ccc,
   0 0 90px #ccc;
-  font-family: "Gmarket-Bold";
+  font-family: 'Pretendard-Medium';
   letter-spacing: 4px;
   display: flex;
   flex-direction: column;
@@ -82,27 +84,17 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 768px) {
-    font-size: 6vw;
-    left: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem;
-    text-align:left;
+    text-align:center;
 
   }
 
-  @media (max-width: 480px) {
-    font-size: 6vw;
-    left: 50%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3rem;
-    text-align:left;
-  }
 `;
 const typeItContent = `
 세상은 아직 살만하다.`;
