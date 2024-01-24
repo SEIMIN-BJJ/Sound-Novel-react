@@ -52,11 +52,14 @@ const ContentText = styled.p`
   color: #b2b2b2;
   font-size: 4rem;
   font-family: "ChosunCentennial";
-  text-shadow:
+  /* text-shadow:
     0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
-    0 0 90px #b23d39;
+    0 0 90px #b23d39; */
+  color: #f42f2f;
+  text-shadow: 
+  0 0 30px #6e6e6e;
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -124,8 +127,7 @@ const ChapterSix = () => {
     }
   }, [isMusicPlaying]);
 
-  const typeItContent = `가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.`;
-
+  const typeItContent = `가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.가자.`;
   return (
     <Container>
       <Btn onClick={() => setIsMusicPlaying(!isMusicPlaying)}>
@@ -139,7 +141,7 @@ const ChapterSix = () => {
       <Link to="/chapterSeven">
         <ContentText>
           <TypeIt
-            options={{ loop: false, speed: 40 }}
+            options={{ speed: 3 }}
             getBeforeInit={(instance) => {
               instance.type(typeItContent);
               return instance;
