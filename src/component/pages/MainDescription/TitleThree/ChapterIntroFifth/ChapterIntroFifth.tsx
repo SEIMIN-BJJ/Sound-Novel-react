@@ -26,11 +26,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: url(${process.env.PUBLIC_URL + "/images/sunset.jpg"}) no-repeat
+  background: url(${process.env.PUBLIC_URL + "/images/cloud.jpeg"}) no-repeat
     right center;
   background-size: cover;
   animation: time 2s ease-in-out;
-  filter: brightness(1);
+  filter: brightness(0.9);
   @keyframes time {
     0% {
       opacity: 0;
@@ -52,7 +52,7 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #ffffff;
   font-size: 3rem;
   position: absolute;
   z-index: 1;
@@ -64,7 +64,7 @@ const ContentText = styled.p`
   0 0 60px #ccc,
   0 0 70px #ccc,
   0 0 90px #ccc;
-  font-family: 'Pretendard-Medium';
+  font-family: 'NanumMyeongjo-Bold';
   letter-spacing: 4px;
   display: flex;
   flex-direction: column;

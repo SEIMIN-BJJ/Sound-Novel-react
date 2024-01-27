@@ -107,9 +107,19 @@ section {
   src: url('./component/assets/fonts/Pretendard-SemiBold.otf') format('truetype');
 }
 @font-face {
-  font-family: 'Pretendard-Thin';
-  src: url('./component/assets/fonts/Pretendard-Thin.otf') format('truetype');
+  font-family: 'NanumMyeongjo-Bold';
+  src: url('./component/assets/fonts/NanumMyeongjo-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'NanumMyeongjo-ExtraBold';
+  src: url('./component/assets/fonts/NanumMyeongjo-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumMyeongjo-Regular';
+  src: url('./component/assets/fonts/NanumMyeongjo-Regular.ttf') format('truetype');
+
+}
+
 /* ==========================     반응형 작업      ===================== */
 
 @media screen and (max-width: 1799px) {
