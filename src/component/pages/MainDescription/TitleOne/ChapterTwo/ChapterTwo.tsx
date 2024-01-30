@@ -7,7 +7,6 @@ const Container = styled.section`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  text-align: center;
   height: 100%;
   background-color: #000;
 `;
@@ -49,7 +48,7 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
+  color: #b2b2b2;
   font-size: 1.5rem;
   font-family: "ChosunCentennial";
   /* text-shadow:
@@ -60,11 +59,11 @@ const ContentText = styled.p`
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 50%;
+  left: 74%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: left;
   letter-spacing: 2px;

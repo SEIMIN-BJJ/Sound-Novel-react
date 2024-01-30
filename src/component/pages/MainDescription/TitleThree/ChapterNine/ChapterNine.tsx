@@ -51,23 +51,24 @@ const Content = styled.div`
 const ContentText = styled.p`
   width: 100%;
   height: 10%;
-  color: #ffffffce;
-  font-size: 1.2rem;
+  color: #b2b2b2;
+  font-size: 1.5rem;
   font-family: "ChosunCentennial";
   /* text-shadow:
     0 0 30px #000,
     0 0 60px #b23d39,
-    0 0 90px #b23d39; */
+    0 0 70px #b23d39; */
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 50%;
+  left: 74%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
   letter-spacing: 2px;
   cursor: pointer;
 
@@ -93,7 +94,7 @@ const ContentText = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 3.5vw;
+    font-size: 1.3rem;
     left: 50%;
     display: flex;
     align-items: flex-start;
@@ -127,7 +128,7 @@ const Btn = styled.button`
 const ChapterText = [
   {
     title:
-    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나에게 다가와 아무 말 없이 내 손을 꼭 붙잡았다. 걱정말라는 얘기를 했다.`나는 생전 처음 보는 사람이 붙잡은 손을 뿌리칠 수도, 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`그 분은 모든 것을 내려놓은 나의 모습을 보고 놀라시며`이런 상태로 어떻게 버티고 살았냐며, 어찌 버티고 살았냐며 불쌍하다 우셨다.`죽어도 열두번은 더 죽을텐데 어떻게 버티고 있었냐며, 가슴이 찢어진다며 우셨다.`처음으로 들었다. '너는 미치지 않았다고.' 우리네들은 그것을 안다.라고.`그러니 걱정 하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
+    "그 후로 힘든 나날을 보내오다 어떤 한 사람을 만나게 된다.`길을 걷다 그 사람은 나에게 다가와 아무 말 없이 내 손을 꼭 붙잡았다.` 걱정말라는 얘기를 했다. 나는 생전 처음 보는 사람이 붙잡은 손을 뿌리칠 수도,` 대꾸도 할 수 없었다. 그저 눈물만 흘렀다.`그 후 그 사람의 손에 이끌려 선생님이라는 사람을 만나게 된다.`그 분은 모든 것을 내려놓은 나의 모습을 보고 놀라시며`이런 상태로 어떻게 버티고 살았냐며, 어찌 버티고 살았냐며 불쌍하다 우셨다.`죽어도 열두번은 더 죽을텐데 어떻게 버티고 있었냐며, 가슴이 찢어진다며 우셨다.`처음으로 들었다. '너는 미치지 않았다고.' 우리네들은 그것을 안다.라고.`그러니 걱정 하지말고 내 어떻게든 도와주겠다 라고 하셨다.`다시 한번 나는 눈물을 뚝뚝 흘렸다."
 
   },
 ];
