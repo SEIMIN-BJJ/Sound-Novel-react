@@ -22,11 +22,9 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10vw;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -65,8 +63,7 @@ const ContentText = styled.p`
   text-shadow:
     0 0 30px #000,
     0 0 60px #b23d39,
-    0 0 70px #b23d39,
-    0 0 90px #b23d39;
+    0 0 70px #b23d39;
   animation: time 5s ease-in-out;
   position: absolute;
   z-index: 1;
@@ -93,7 +90,6 @@ const ContentText = styled.p`
   width: 100vw;
   height: 100vh;
   font-size: 1.2rem;
-  padding: 2rem;
   }
 
 `;

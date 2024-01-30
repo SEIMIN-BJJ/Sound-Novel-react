@@ -13,11 +13,9 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10vw;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -60,17 +58,17 @@ const ContentText = styled.p`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    text-shadow:
-    0 0 4px #000,
-    0 0 11px #000,
-    0 0 19px #000,
-    0 0 90px #b23d39,
-    0 0 80px #b23d39,
-    0 0 90px #b23d39,
-    0 0 100px #b23d39,
-    0 0 150px #b23d39,
-    0 0 190px #b23d39,
-    0 0 250px #b23d39;
+  text-shadow:
+    0 0 4px #888,
+    0 0 11px #888,
+    0 0 19px #888,
+    0 0 90px #888888,
+    0 0 80px #888888,
+    0 0 90px #888888,
+    0 0 100px #888888,
+    0 0 150px #888888,
+    0 0 190px #888888,
+    0 0 250px #888888;
   display: flex;
   flex-direction: column;
   align-items: center;

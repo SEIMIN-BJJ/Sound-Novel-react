@@ -14,11 +14,9 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10vw;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
