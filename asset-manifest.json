@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sound-Novel-react/static/css/main.f0fe91a1.css",
-    "main.js": "/Sound-Novel-react/static/js/main.84991086.js",
+    "main.js": "/Sound-Novel-react/static/js/main.e8107c51.js",
     "static/js/787.ec7e2acd.chunk.js": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js",
     "static/media/ChosunCentennial_otf.otf": "/Sound-Novel-react/static/media/ChosunCentennial_otf.54881a3acbbea1be6bb4.otf",
     "static/media/ChosunGs.TTF": "/Sound-Novel-react/static/media/ChosunGs.4ba914acf004d00cc51f.TTF",
@@ -19,11 +19,11 @@
     "static/media/Pretendard-ExtraLight.otf": "/Sound-Novel-react/static/media/Pretendard-ExtraLight.c1677723ce338097648f.otf",
     "index.html": "/Sound-Novel-react/index.html",
     "main.f0fe91a1.css.map": "/Sound-Novel-react/static/css/main.f0fe91a1.css.map",
-    "main.84991086.js.map": "/Sound-Novel-react/static/js/main.84991086.js.map",
+    "main.e8107c51.js.map": "/Sound-Novel-react/static/js/main.e8107c51.js.map",
     "787.ec7e2acd.chunk.js.map": "/Sound-Novel-react/static/js/787.ec7e2acd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0fe91a1.css",
-    "static/js/main.84991086.js"
+    "static/js/main.e8107c51.js"
   ]
 }
