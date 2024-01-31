@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import "../../../App.scss";
 
 const Container = styled.section`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;

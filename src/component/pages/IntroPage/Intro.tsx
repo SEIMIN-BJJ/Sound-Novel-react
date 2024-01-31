@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../../../App.scss";
 
 const Container = styled.section`
-  width: 100vw;
+  width: 100%;
   height: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,15 +14,8 @@ const Container = styled.section`
 
 `;
 
-const Content = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-`;
-
-const ContentText = styled.p`
-  width: 100vw;
+const ContentText = styled.div`
+  width: 100%;
   height: 100vh;
   color: #b2b2b2;
   font-size: 2rem;
@@ -52,15 +46,17 @@ const ContentText = styled.p`
 `;
 
 const Intro = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/introsecond");
+  };
   return (
     <Container>
-      <Content>
-        <Link to="/introsecond">
-          <ContentText>
-            이 이야기는 지인의 실화를 바탕으로 구성 되었습니다.
-          </ContentText>
-        </Link>
-      </Content>
+      <ContentText onClick={handleClick}>
+        이 이야기는 지인의 실화를 바탕으로 구성 되었습니다.
+      </ContentText>
     </Container>
   );
 };
