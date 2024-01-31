@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 import Intro from "../component/pages/IntroPage/Intro";
 import IntroSecond from "../component/pages/IntroPage/IntroSecond";
 import FirstDescription from "../component/pages/IntroDescription/FirstDescription";
@@ -23,35 +23,35 @@ import ChapterTen from "../component/pages/MainPage/ChapterTen";
 import ChatperEleven from "../component/pages/MainPage/ChatperEleven";
 import ChapterIntroFifth from "../component/pages/ChapterDescription/ChapterIntroFifth";
 
-const variants = {
-  enter: {
-    opacity: 0,
-    x: "100%",
-  },
-  center: {
-    opacity: 1,
-    x: 0,
-  },
-  exit: {
-    opacity: 0,
-    x: "-100%",
-  },
-};
+// const variants = {
+//   enter: {
+//     opacity: 0,
+//     x: "100%",
+//   },
+//   center: {
+//     opacity: 1,
+//     x: 0,
+//   },
+//   exit: {
+//     opacity: 0,
+//     x: "-100%",
+//   },
+// };
 
 const StoryRoutes = () => {
   const location = useLocation();
 
   return (
-      <AnimatePresence exitBeforeEnter={false}>
-        <motion.div
-          key={location.pathname}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{ duration: 0.5 }}
-          style={{ position: "absolute", width: "100%" }}
-        >
+      // <AnimatePresence exitBeforeEnter={false}>
+      //   <motion.div
+      //     key={location.pathname}
+      //     variants={variants}
+      //     initial="enter"
+      //     animate="center"
+      //     exit="exit"
+      //     transition={{ duration: 0.5 }}
+      //     style={{ position: "absolute", width: "100%" }}
+      //   >
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Intro />} />
           <Route path="/introsecond" element={<IntroSecond />} />
@@ -75,8 +75,8 @@ const StoryRoutes = () => {
           <Route path="/chatperEleven" element={<ChatperEleven />} />
           <Route path="/chapterIntroFifth" element={<ChapterIntroFifth />}/>
         </Routes>
-      </motion.div>
-    </AnimatePresence>
+    //   </motion.div>
+    // </AnimatePresence>
   );
 };
 

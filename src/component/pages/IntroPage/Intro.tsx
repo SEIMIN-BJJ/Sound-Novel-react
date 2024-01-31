@@ -52,6 +52,7 @@ const Intro = () => {
   const handleClick = () => {
     navigate("/introsecond");
   };
+  
   return (
     <Container>
       <ContentText onClick={handleClick}>
