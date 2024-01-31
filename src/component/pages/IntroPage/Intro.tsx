@@ -5,7 +5,7 @@ import "../../../App.scss";
 
 const Container = styled.section`
   width: 100%;
-  height: auto;
+  height: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
