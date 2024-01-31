@@ -12,6 +12,11 @@ const Container = styled.section`
   align-items: center;
   background-color: #000;
 
+  @media (max-width: 768px) {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  }
 `;
 
 const ContentText = styled.div`
@@ -41,7 +46,10 @@ const ContentText = styled.div`
   }
 
   @media (max-width: 768px) {
+  width: 100%;
+  height: 100vh;
   font-size: 1.2rem;
+  overflow-x: hidden;
   }
 `;
 
