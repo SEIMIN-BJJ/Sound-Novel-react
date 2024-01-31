@@ -46,7 +46,7 @@ const Content = styled.div`
 
 const ContentText = styled.p`
   width: 100%;
-  height: 10%;
+  height: auto;
   color: #b2b2b2;
   font-size: 4rem;
   font-family: "ChosunCentennial";
@@ -68,6 +68,7 @@ const ContentText = styled.p`
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
   cursor: pointer;
 
   @media (max-width: 768px) {
