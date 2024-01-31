@@ -29,7 +29,7 @@ const ContentText = styled.div`
     0 0 30px #000,
     0 0 60px #b23d39,
     0 0 70px #b23d39,
-    0 0 90px #b23d39;
+    0 0 90px #b23d38;
   animation: time 5s ease-in-out;
   display: flex;
   align-items: center;
