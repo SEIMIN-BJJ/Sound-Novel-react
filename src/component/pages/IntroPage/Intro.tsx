@@ -13,15 +13,11 @@ const Container = styled.section`
   background-color: #000;
 
   @media (max-width: 768px) {
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
+    overflow: hidden;
   }
 `;
 
 const ContentText = styled.div`
-  width: 100%;
-  height: 100vh;
   color: #b2b2b2;
   font-size: 2rem;
   font-family: "ChosunCentennial";
@@ -31,9 +27,6 @@ const ContentText = styled.div`
     0 0 70px #b23d39,
     0 0 90px #b23d39;
   animation: time 5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 
   @keyframes time {
@@ -46,23 +39,17 @@ const ContentText = styled.div`
   }
 
   @media (max-width: 768px) {
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-  overflow-x: hidden;
+    font-size: 1.2rem;
   }
 `;
 
 const Intro = () => {
-
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate("/introsecond");
   };
-  
+
   return (
     <Container>
       <ContentText onClick={handleClick}>
@@ -71,4 +58,5 @@ const Intro = () => {
     </Container>
   );
 };
+
 export default Intro;
