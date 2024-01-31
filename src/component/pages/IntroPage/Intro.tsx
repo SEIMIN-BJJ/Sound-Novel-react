@@ -46,9 +46,11 @@ const ContentText = styled.div`
   }
 
   @media (max-width: 768px) {
-  width: 100%;
-  height: 100vh;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
   overflow-x: hidden;
   }
 `;
