@@ -18,6 +18,7 @@ const Container = styled.section`
 `;
 
 const ContentText = styled.div`
+
   color: #b2b2b2;
   font-size: 2rem;
   font-family: "ChosunCentennial";
@@ -39,7 +40,9 @@ const ContentText = styled.div`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+  max-height: 100vh;
+  height: auto;
   }
 `;
 
