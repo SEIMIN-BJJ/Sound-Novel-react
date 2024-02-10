@@ -14,6 +14,7 @@ const Container = styled.section`
 
   @media (max-width: 768px) {
     overflow: hidden;
+    max-height: 100vh;
   }
 `;
 
@@ -41,7 +42,6 @@ const ContentText = styled.div`
 
   @media (max-width: 768px) {
   font-size: 1.2rem;
-  max-height: 100vh;
   height: auto;
   }
 `;

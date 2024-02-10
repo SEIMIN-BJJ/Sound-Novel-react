@@ -13,11 +13,11 @@ const Container = styled.section`
   background-color: #000;
 
   @media (max-width: 768px) {
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100vh;
   }
 `;
 
@@ -29,9 +29,7 @@ const Content = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-  width: 100vw;
-  height: 100vh;
-
+  height: auto;
   }
 `;
 
